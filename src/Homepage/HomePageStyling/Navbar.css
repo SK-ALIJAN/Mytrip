@@ -1,0 +1,33 @@
+nav {
+  height: 2rem;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.leftbutton {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.leftbutton img {
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+  top: 1rem;
+}
+.Menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 40px;
+}
+.Menu > a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  margin-left: 20px;
+}
+.Menu > a:hover {
+  color: #f05c09;
+}
