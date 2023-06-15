@@ -1,10 +1,14 @@
 nav {
   height: 2rem;
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   text-transform: capitalize;
   padding: 10px;
+  position: sticky;
+  top: 0;
+  margin-bottom: 40px;
+  z-index: 2;
+  border: 2px solid rgb(239, 230, 230);
 }
 .leftbutton {
   width: 60%;
@@ -12,22 +16,159 @@ nav {
   align-items: center;
 }
 .leftbutton img {
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
   position: relative;
-  top: 1rem;
+  margin-left: 10px;
+  align-self: center;
 }
 .Menu {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 .Menu > a {
   text-decoration: none;
   color: white;
-  font-size: large;
+  font-size: 17px;
   margin-left: 20px;
 }
 .Menu > a:hover {
   color: #f05c09;
+}
+
+.rightbutton {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+}
+.support {
+  margin-right: 20px;
+  position: relative;
+}
+
+.support > p:nth-child(1) {
+  border: 2px solid white;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+  margin-right: 10px;
+  background-color: inherit;
+}
+/* .support > p:nth-child(2){
+
+} */
+.support > p:nth-child(2):hover {
+  color: #f05c09;
+  cursor: pointer;
+}
+.support > p:nth-child(1):hover {
+  background-color: #f05c09;
+  cursor: pointer;
+  color: #101010;
+  font-weight: 600;
+}
+.support,
+.MyBookings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.MyBookings {
+  border: 2px solid #4628ff;
+  padding: 20px;
+  border-radius: 11px;
+}
+.MyBookings > :nth-child(1) {
+  margin-right: 10px;
+  background-color: inherit;
+}
+
+.MyBookings > :nth-child(2) {
+  background-color: inherit;
+}
+
+.MyBookings:hover {
+  background-color: #f05c09;
+  cursor: pointer;
+  border-color: #f05c09;
+}
+.MyBookings:hover > :nth-child(2) {
+  color: #101010;
+  cursor: pointer;
+}
+.MyBookings:hover > :nth-child(1) {
+  color: #101010;
+  cursor: pointer;
+}
+.globeIcon {
+  font-size: 20px;
+  color: #4628ff;
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 2px;
+}
+.supportDisplay {
+  background-color: #f05c09;
+  position: absolute;
+  z-index: 4;
+  width: 8rem;
+  padding: 10px;
+  border-radius: 8px;
+  top: 40px;
+  left: -25px;
+  /* display: none; */
+}
+.supportDisplay p {
+  background-color: inherit;
+  color: #101010;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.supportDisplay p:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) and (min-width: 515px) {
+  .rightbutton {
+    width: 20%;
+  }
+  .support {
+    margin-right: 0;
+  }
+  .support > p:nth-child(1) {
+    position: absolute;
+    left: 15px;
+  }
+  .support > p:nth-child(2) {
+    display: none;
+    position: absolute;
+    top: 10px;
+    background-color: #4628ff;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 5;
+  }
+  .support:hover > p:nth-child(2) {
+    display: block;
+  }
+  .MyBookings {
+    border: none;
+  }
+  .MyBookings > p:nth-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 715px) and (min-width: 500px) {
+  .leftbutton {
+    width: 70%;
+  }
+  .Menu a {
+    font-size: 20px;
+  }
 }

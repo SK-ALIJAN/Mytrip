@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap");
+
 * {
   background-color: #101010;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
 }
+/* *::-webkit-scrollbar {
+  background-color: #101010;
+} */

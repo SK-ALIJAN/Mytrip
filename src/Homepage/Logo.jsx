@@ -1,11 +1,19 @@
 import React from "react";
-import { Image } from "@chakra-ui/react";
 import img from "./logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Logo = () => {
+  let Navigate = useNavigate();
   return (
     <>
-      <Image src={img} alt="Logo" w="100%" />
+      <img
+        src={img}
+        alt="Logo"
+        w="100%"
+        onClick={() => {
+          Navigate("/");
+        }}
+      />
     </>
   );
 };
