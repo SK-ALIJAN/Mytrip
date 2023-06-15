@@ -1,0 +1,99 @@
+.main {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 20px;
+}
+.main img {
+  width: 100%;
+  height: 18rem;
+  border-radius: 15px;
+}
+.firstline {
+  display: flex;
+  justify-content: space-between;
+}
+.firstline > div:nth-child(1) {
+  color: white;
+}
+.firstline > div:nth-child(1) > p:nth-child(1) {
+  font-weight: bolder;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.firstline > div:nth-child(1) > p:nth-child(2) {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.firstline > * {
+  width: 24%;
+}
+.secondline {
+  display: flex;
+  justify-content: space-between;
+}
+.secondline > * {
+  width: 24%;
+}
+
+.icon p {
+  color: white;
+  text-align: right;
+  position: relative;
+  top: 30%;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.hotelIcon {
+  background-color: #f05c09;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+.hotelIcon > :nth-child(1) {
+  color:#101010;
+  font-size: x-large;
+  background-color: inherit;
+}
+.flightIcon {
+  background-color: white;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+.flightIcon > :nth-child(1) {
+  color: #101010;
+  font-size: x-large;
+  background-color: inherit;
+}
+.carIcon {
+  background-color: #4628ff;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+.carIcon > :nth-child(1) {
+  color: white;
+  font-size: x-large;
+  background-color: inherit;
+}

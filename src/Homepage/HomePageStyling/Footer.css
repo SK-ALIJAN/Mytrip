@@ -1,0 +1,87 @@
+#footer {
+  color: rgb(237, 242, 240);
+  background-color: #363333;
+  margin-top: 50px;
+  position: relative;
+}
+
+.footerFirst {
+  width: 90%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 142, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 15px;
+  margin: auto;
+  position: relative;
+  bottom: 30px;
+}
+.footerFirst > div:nth-child(1) {
+  background-color: inherit;
+}
+.footerFirst > div:nth-child(1) > :nth-child(1) {
+  background-color: inherit;
+  font-size: larger;
+}
+.footerFirst > div:nth-child(1) > :nth-child(1) + div {
+  display: flex;
+  background-color: inherit;
+}
+.footerFirst > div:nth-child(1) > :nth-child(1) + div p {
+  display: flex;
+  background-color: inherit;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 15px;
+  position: relative;
+  bottom: 20px;
+}
+
+.tick {
+  background-color: inherit;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.footerFirst > div:nth-child(1) + div {
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerFirst > div:nth-child(1) + div > button:nth-child(1) {
+  background-color: #101010;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: 0;
+  padding: 10px;
+  border-radius: 11px;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.footerFirst > div:nth-child(1) + div > button:nth-child(2) {
+  background-color: inherit;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  border: 0;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 11px;
+  font-size: 13px;
+}
+.Footer-data{
+   padding: 40px;
+   background-color: #363333;
+}
+.Footer-data img{
+width: 3rem;
+background-color: inherit;
+}
