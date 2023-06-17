@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      {/* <Image/>
-      <Footer/> */}
+      <Image/>
+      <Footer/>
     </>
   );
 };

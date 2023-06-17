@@ -22,51 +22,41 @@ const Footer = () => {
       </div>
 
       <div className="Footer-data">
-        <Logo />
-        <div className="contact-information">
-          <h3>Contact Information</h3>
-          <p>Phone: +1-555-123-4567</p>
-          <p>Email: info@bookitnow.com</p>
-          <p>Address: 123 Main Street, Anytown, USA</p>
+        <div className="contacts">
+          <div className="contact-information">
+            <h3>Contact Information</h3>
+            <p>Phone: +91 8695453740</p>
+            <p>Email: Connect2skalijan@gmail.com</p>
+            <p>Address: Kolkata, WestBengal, India</p>
+          </div>
+          <div className="quick-links">
+            <h3>Quick Links</h3>
+            <div className="link">
+              <div>
+               
+                <p>Home</p>
+                <p>Flights</p>
+                <p>Hotels</p>
+              </div>
+              <div>
+                
+                <p>Car Rentals</p>
+                <p>Destinations</p>
+                <p>Contact Us</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="newsletter-subscription">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Stay up to date with our latest news and promotions.</p>
+            <form>
+              <input type="email" placeholder="Enter your email address" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
-        <div className="quick-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li>Home</li>
-            <li>Flights</li>
-            <li>Hotels</li>
-            <li>Car Rentals</li>
-            <li>Destinations</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <div className="social-media">
-          <h3>Social Media</h3>
-          <ul>
-            <li>
-              Facebook:{" "}
-              <a href="https://facebook.com/bookitnow">
-                facebook.com/bookitnow
-              </a>
-            </li>
-            <li>
-              Twitter:{" "}
-              <a href="https://twitter.com/bookitnow">twitter.com/bookitnow</a>
-            </li>
-            <li>
-              Instagram:{" "}
-              <a href="https://instagram.com/bookitnow">
-                instagram.com/bookitnow
-              </a>
-            </li>
-            <li>
-              LinkedIn:{" "}
-              <a href="https://linkedin.com/company/bookitnow">
-                linkedin.com/company/bookitnow
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div className="disclaimer">
           <p>
             Disclaimer: BookItNow is a leading platform for flight and hotel
@@ -80,6 +70,7 @@ const Footer = () => {
           <p>
             &copy; {new Date().getFullYear()} BookItNow. All rights reserved.
           </p>
+          <button>Feel free to get support</button>
         </div>
       </div>
     </div>

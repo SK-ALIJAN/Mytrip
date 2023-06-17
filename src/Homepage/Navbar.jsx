@@ -47,7 +47,7 @@ const Navbar = () => {
       <div className="rightbutton">
         <div className="support" onClick={handleSupport}>
           <p>?</p>
-          <p>support</p>
+          <p className="showw">support</p>
 
           <div
             className="supportDisplay"
@@ -55,7 +55,6 @@ const Navbar = () => {
             style={{ display: showSupport ? "block" : "none" }}
           >
             <p>Contact us</p>
-            <p>FAQ</p>
             <p>Airlines Info</p>
             <p>My Bookings</p>
           </div>
@@ -67,7 +66,7 @@ const Navbar = () => {
           }}
         >
           <BsFillPersonFill className="globeIcon" r />
-          <p>My Bookings</p>
+          <p className="myBok">My Bookings</p>
         </div>
       </div>
     </nav>

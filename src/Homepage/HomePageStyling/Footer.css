@@ -77,11 +77,86 @@
   border-radius: 11px;
   font-size: 13px;
 }
-.Footer-data{
-   padding: 40px;
-   background-color: #363333;
+.Footer-data {
+  width: 90%;
+  margin: auto;
+  background-color: #363333;
+  font-size: 15px;
 }
-.Footer-data img{
-width: 3rem;
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* gap: 30px; */
+  background-color: inherit;
+}
+.contacts>*{
 background-color: inherit;
+}
+h3,p{
+background-color: inherit;
+}
+.link{
+background-color: inherit;
+display: flex;
+}
+.link div{
+margin-right: 20px;
+background-color: inherit;
+}
+.contacts p:hover,.contacts li:hover{
+color: #f05c09;
+}
+.contacts li{
+list-style: none;
+}
+.Footer-data img {
+  width: 3rem;
+  background-color: inherit;
+}
+.newsletter-subscription form,.newsletter-subscription form>input{
+background-color: inherit;
+}
+.newsletter-subscription form{
+display: flex;
+}
+.newsletter-subscription form>input{
+padding: 10px;
+border-radius: 11px;
+margin-right: 10px;
+}
+.newsletter-subscription form>input::placeholder{
+font-size: 13px;
+}
+.newsletter-subscription form>button{
+border: 0;
+background-color: #f05c09;
+font-size: 13px;
+font-weight: 600;
+border-radius: 8px;
+outline: 0;
+letter-spacing: 2px;
+}
+.newsletter-subscription form>button:hover{
+background-color: #4828ff;
+color: white;
+cursor: pointer;
+}
+
+.disclaimer{
+background-color: inherit;
+border-bottom: 2px solid #f05c09;
+}
+.copyright{
+background-color: inherit;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.copyright button{
+color: rgb(9, 244, 29);
+font-size: 10px;
+background-color: inherit;
+border: 2px solid #4828ff;
+border-radius: 11px;
+padding: 5px;
 }

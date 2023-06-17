@@ -8,7 +8,6 @@ nav {
   top: 0;
   margin-bottom: 40px;
   z-index: 2;
-  border: 2px solid rgb(239, 230, 230);
 }
 .leftbutton {
   width: 60%;
@@ -16,8 +15,8 @@ nav {
   align-items: center;
 }
 .leftbutton img {
-  width: 5rem;
-  height: 5rem;
+  width: 3.1rem;
+  height: 3.1rem;
   position: relative;
   margin-left: 10px;
   align-self: center;
@@ -46,6 +45,7 @@ nav {
 .support {
   margin-right: 20px;
   position: relative;
+  font-size: 15px;
 }
 
 .support > p:nth-child(1) {
@@ -89,6 +89,7 @@ nav {
 
 .MyBookings > :nth-child(2) {
   background-color: inherit;
+  font-size: 15px;
 }
 
 .MyBookings:hover {
@@ -148,14 +149,16 @@ nav {
   .support > p:nth-child(2) {
     display: none;
     position: absolute;
-    top: 10px;
+    top: 35px;
     background-color: #4628ff;
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
-    z-index: 5;
+    z-index: 2;
+    font-size: 13px;
   }
-  .support:hover > p:nth-child(2) {
+  .support:hover .showw {
     display: block;
+   
   }
   .MyBookings {
     border: none;
