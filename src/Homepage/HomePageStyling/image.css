@@ -47,11 +47,14 @@
   letter-spacing: 2px;
   font-weight: 600;
 }
+
 .icons {
   display: flex;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
+
 .hotelIcon {
   background-color: #f05c09;
   border: none;
@@ -63,7 +66,7 @@
   place-content: center;
 }
 .hotelIcon > :nth-child(1) {
-  color:#101010;
+  color: #101010;
   font-size: x-large;
   background-color: inherit;
 }

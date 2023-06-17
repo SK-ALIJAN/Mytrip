@@ -41,6 +41,8 @@ const Images = () => {
           </div>
 
           <p>Explore the World with Mytrip Making Journeys Brighter!</p>
+
+          
         </div>
         <div>
           <img src={image[0]} alt="" />
