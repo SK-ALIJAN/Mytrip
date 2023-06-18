@@ -2,8 +2,11 @@ import React from "react";
 import "./HomePageStyling/Footer.css";
 import { BsCheckLg, BsArrowRight } from "react-icons/bs";
 import Logo from "./Logo";
+import { useNavigate } from "react-router-dom";
+
 
 const Footer = () => {
+  let Navigate = useNavigate();
   return (
     <div id="footer">
       <div className="footerFirst">
@@ -16,8 +19,20 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <button>Click to Book here {<BsArrowRight />}</button>
-          <button> My Bookings {<BsArrowRight className="tick" />}</button>
+          <button
+            onClick={() => {
+              Navigate("/flight");
+            }}
+          >
+            Click to Book here {<BsArrowRight className="tick" />}
+          </button>
+          <button
+            onClick={() => {
+              Navigate("/profile");
+            }}
+          >
+            My Bookings {<BsArrowRight className="tick" />}
+          </button>
         </div>
       </div>
 
@@ -33,13 +48,11 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <div className="link">
               <div>
-               
                 <p>Home</p>
                 <p>Flights</p>
                 <p>Hotels</p>
               </div>
               <div>
-                
                 <p>Car Rentals</p>
                 <p>Destinations</p>
                 <p>Contact Us</p>
@@ -59,7 +72,7 @@ const Footer = () => {
 
         <div className="disclaimer">
           <p>
-            Disclaimer: BookItNow is a leading platform for flight and hotel
+            Disclaimer: My trip is a leading platform for flight and hotel
             bookings. This website provides information and facilitates
             bookings, but does not guarantee the availability, accuracy, or
             quality of the services offered by airlines, hotels, or car rental
@@ -68,9 +81,9 @@ const Footer = () => {
         </div>
         <div className="copyright">
           <p>
-            &copy; {new Date().getFullYear()} BookItNow. All rights reserved.
+            &copy; {new Date().getFullYear()} My Trip. All rights reserved.
           </p>
-          <button>Feel free to get support</button>
+          <button  onClick={()=>{Navigate('/contact')}}>Feel free to get support</button>
         </div>
       </div>
     </div>

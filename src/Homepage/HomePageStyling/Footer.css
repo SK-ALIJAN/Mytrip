@@ -1,6 +1,6 @@
 #footer {
   color: rgb(237, 242, 240);
-  background-color: #363333;
+  background-color: #262424;
   margin-top: 50px;
   position: relative;
 }
@@ -66,6 +66,10 @@
   font-size: 13px;
   margin-right: 10px;
 }
+.footerFirst > div:nth-child(1) + div > button:nth-child(1):hover{
+background-color: #f05c09;
+}
+
 .footerFirst > div:nth-child(1) + div > button:nth-child(2) {
   background-color: inherit;
   color: inherit;
@@ -77,17 +81,21 @@
   border-radius: 11px;
   font-size: 13px;
 }
+.footerFirst > div:nth-child(1) + div > button:nth-child(2):hover{
+background-color: #f05c09;
+border-color: #f05c09;
+}
 .Footer-data {
   width: 90%;
   margin: auto;
-  background-color: #363333;
+  background-color: #262424;
   font-size: 15px;
 }
 .contacts {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   /* gap: 30px; */
-  background-color: inherit;
+  background-color: #262424;
 }
 .contacts>*{
 background-color: inherit;
@@ -114,7 +122,7 @@ list-style: none;
   background-color: inherit;
 }
 .newsletter-subscription form,.newsletter-subscription form>input{
-background-color: inherit;
+background-color: #262424;
 }
 .newsletter-subscription form{
 display: flex;
@@ -143,20 +151,32 @@ cursor: pointer;
 }
 
 .disclaimer{
-background-color: inherit;
+background-color: #262424;
 border-bottom: 2px solid #f05c09;
 }
 .copyright{
-background-color: inherit;
+background-color: #262424;
 display: flex;
 justify-content: space-between;
 align-items: center;
 }
 .copyright button{
-color: rgb(9, 244, 29);
+color:white;
 font-size: 10px;
-background-color: inherit;
-border: 2px solid #4828ff;
+background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 142, 255, 1) 100%
+  );
+border: none;
 border-radius: 11px;
 padding: 5px;
+cursor: pointer;
+}
+
+.Footer-data img{
+width: 6rem;
+position: relative;
+right: 40px;
 }
