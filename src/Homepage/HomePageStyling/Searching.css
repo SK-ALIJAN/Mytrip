@@ -1,0 +1,162 @@
+.mains {
+  color: white;
+  width: 90%;
+  margin: auto;
+  height: 58vh;
+  transition: all 1s ease-in-out;
+}
+.mains > p:nth-child(1) {
+  font-weight: 600;
+  margin: auto;
+  width: 50%;
+  font-size: large;
+}
+.For-Searching {
+  background-color: #c05f09;
+  border-radius: 11px;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #c05f09;
+  box-sizing: border-box;
+  /* box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06); */
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+  background-color: #c05f09;
+}
+
+.radio-inputs .radio input {
+  display: none;
+  background-color: #c05f09;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all 0.15s ease-in-out;
+  background-color: #c05f09;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.flightInput {
+  background-color: #c05f09;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  font-size: 15px;
+}
+
+.section1 {
+  display: flex;
+  background-color: #c05f09;
+  align-items: center;
+  padding-top: 10px;
+ 
+}
+.from,
+.ticks,
+.flightInput input,
+.flightInput label,
+.To,
+.passengers,
+.class,
+.date,
+.flightInput select ,.section1,.section2{
+  background-color: #c05f09 !important;
+}
+.section2 {
+  display: flex;
+  background-color: #c05f09;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.from,
+.To {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.from input,
+.To input {
+  padding: 12px;
+  border: 2px solid white;
+  outline: 0;
+  border-radius: 5px;
+  width: 15rem;
+  
+}
+.from input::placeholder,
+.To input::placeholder {
+  color: #fff;
+  padding-left: 40px;
+}
+#ftick {
+  position: absolute;
+  top: 55%;
+  left: 3%;
+}
+#stick{
+position: absolute;
+   top: 55%;
+  left: 3%;
+}
+#middle{
+margin: 20px;
+position: relative;
+top: 10px;
+}
+.date,.passengers,.class{
+display: flex;
+flex-direction: column;
+}
+.date input,.passengers input,.class select{
+margin-top: 3px;
+border: 2px solid white;
+outline: none;
+border-radius: 5px;
+width: 10rem;
+}
+.sl{
+color: #fff;
+background-color: #c05f09;
+font-size: 15px;
+}
+.date input::placeholder{
+color: #fff !important;
+}
+.search{
+border: 0;
+outline: 0;
+color: #fff;
+background-color: #4628ff;
+margin-left: 20px;
+padding: 10px;
+border-radius: 11px;
+font-size: 15px;
+cursor: pointer;
+}

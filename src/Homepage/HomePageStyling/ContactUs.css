@@ -2,11 +2,20 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  color: white;
+  background-color: transparent;
+ 
+}
+
+
+.contact-us-page p{
+font-size: small;
 }
 
 .page-header {
   text-align: center;
   margin-bottom: 20px;
+  background-color: transparent;
 }
 
 .page-content {
@@ -66,4 +75,15 @@ button[type="submit"]:hover {
 
 .page-footer {
   text-align: center;
+}
+.message{
+position: fixed;
+top: 13%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color: #4628ff;
+padding: 20px;
+text-align: center;
+border-radius: 11px;
+font-weight: 600;
 }

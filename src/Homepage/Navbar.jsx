@@ -13,7 +13,7 @@ let link = [
 const Navbar = () => {
   const [showSupport, setShowSupport] = useState(false);
   const hideRef = useRef();
-  let Navigate=useNavigate();
+  let Navigate = useNavigate();
 
   useEffect(() => {
     document.addEventListener("contextmenu", handleClickOutside);
@@ -54,15 +54,40 @@ const Navbar = () => {
             ref={hideRef}
             style={{ display: showSupport ? "block" : "none" }}
           >
-            <p>Contact us</p>
-            <p>Airlines Info</p>
-            <p>My Bookings</p>
+            <p
+              onClick={() => {
+                Navigate("/flight");
+              }}
+            >
+              Airlines Info
+            </p>
+            <p
+              onClick={() => {
+                Navigate("/hotel");
+              }}
+            >
+              Hotels
+            </p>
+            <p
+              onClick={() => {
+                Navigate("/profile");
+              }}
+            >
+              My Bookings
+            </p>
+            <p
+              onClick={() => {
+                Navigate("/contact");
+              }}
+            >
+              Contact us
+            </p>
           </div>
         </div>
         <div
           className="MyBookings"
           onClick={() => {
-            Navigate('./profile')
+            Navigate("./profile");
           }}
         >
           <BsFillPersonFill className="globeIcon" r />
