@@ -1,29 +1,39 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import "./HomePageStyling/Searching.css";
 import {
   FaPlaneDeparture,
   FaPlaneArrival,
   FaExchangeAlt,
-  FaCalendarAlt,
-  FaCouch,
-  FaUserFriends,
 } from "react-icons/fa";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import { color } from "framer-motion";
+
+let reducer = (state, action) => {
+  switch (action.type) {
+    case "from": {
+      return { ...state, from: true, to: false };
+    }
+    case "to": {
+      return { ...state, to: true, from: false };
+    }
+
+    default:
+      throw new Error("Invalid action Type!");
+  }
+};
+
+let initialState = { from: false, to: false };
+const today = new Date().toISOString().split("T")[0];
 
 const Searching = () => {
   let [radio, setRadio] = useState("Return");
   let [show, setShow] = useState(false);
+  let [state, Dispatch] = useReducer(reducer, initialState);
+  let [fromshow, setfromShow] = useState(false);
+  let [toshow, settoShow] = useState(false);
 
   let handleChange = (e) => {
     setRadio(e.target.value);
   };
-  const [selectedDate, setSelectedDate] = useState(null);
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
   useEffect(() => {
     let id = setTimeout(() => {
       setShow(true);
@@ -33,6 +43,8 @@ const Searching = () => {
       clearTimeout(id);
     };
   }, []);
+
+  let handleinput = () => {};
 
   return (
     <>
@@ -62,7 +74,7 @@ const Searching = () => {
                 />
                 <span className="name">One-way</span>
               </label>
-              <label className="radio">
+              {/* <label className="radio">
                 <input
                   type="radio"
                   name="radio"
@@ -70,7 +82,7 @@ const Searching = () => {
                   onChange={handleChange}
                 />
                 <span className="name">Multi-City</span>
-              </label>
+              </label> */}
             </div>
 
             <div className="flightInput">
@@ -80,20 +92,53 @@ const Searching = () => {
                     <label htmlFor="From">From</label>
 
                     <FaPlaneDeparture className="ticks" id="ftick" />
-                    <input type="text" placeholder="Enter origin" />
+                    <input
+                      type="text"
+                      placeholder=""
+                      onChange={(e) => {
+                        Dispatch({ type: "from", payload: e.target.value });
+                      }}
+                      onClick={() => {
+                        setfromShow(!fromshow);
+                      }}
+                    />
+
+                    {state.from && fromshow ? (
+                      <div className="fromData">ddd</div>
+                    ) : (
+                      ""
+                    )}
                   </div>
                   <FaExchangeAlt className="ticks" id="middle" />
                   <div className="To">
                     <label htmlFor="To">To</label>
                     <FaPlaneArrival className="ticks" id="stick" />
-                    <input type="text" placeholder="Enter destination" />
+                    <input
+                      type="text"
+                      placeholder=""
+                      onChange={(e) => {
+                        Dispatch({ type: "to", payload: e.target.value });
+                      }}
+                      onClick={() => {
+                        settoShow(!toshow);
+                      }}
+                    />
+                    {state.to && toshow ? <div className="toData"></div> : ""}
                   </div>
                 </section>
                 <section className="section2">
                   <div className="date">
                     <label htmlFor="Date">Date</label>
-                    <input type="date" />
+                    <input type="date" className="tarikh" min={today} />
                   </div>
+                  {radio == "Return" ? (
+                    <div className="date" id="return">
+                      <label htmlFor="Date">Return</label>
+                      <input type="date" className="tarikh" />
+                    </div>
+                  ) : (
+                    ""
+                  )}
                   <div className="passengers">
                     <label htmlFor="Passengers">Passengers</label>
                     <input type="number" min="1" max="10" />
