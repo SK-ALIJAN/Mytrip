@@ -8,13 +8,14 @@
 .mains > p:nth-child(1) {
   font-weight: 600;
   margin: auto;
-  width: 50%;
+  width: 80%;
   font-size: large;
+  text-align: center;
 }
 .For-Searching {
   background-color: #c05f09;
   border-radius: 11px;
-  width: 80%;
+  width: 84%;
   margin: auto;
   margin-top: 30px;
 }
@@ -75,7 +76,9 @@
   background-color: #c05f09;
   align-items: center;
   padding-top: 10px;
- 
+}
+.For-Searching {
+  padding: 10px;
 }
 .from,
 .ticks,
@@ -85,7 +88,9 @@
 .passengers,
 .class,
 .date,
-.flightInput select ,.section1,.section2{
+.flightInput select,
+.section1,
+.section2 {
   background-color: #c05f09 !important;
 }
 .section2 {
@@ -108,8 +113,12 @@
   outline: 0;
   border-radius: 5px;
   width: 15rem;
-  
 }
+.from:hover > #ftick,
+.To:hover > #stick {
+  display: none;
+}
+
 .from input::placeholder,
 .To input::placeholder {
   color: #fff;
@@ -120,43 +129,122 @@
   top: 55%;
   left: 3%;
 }
-#stick{
-position: absolute;
-   top: 55%;
+#stick {
+  position: absolute;
+  top: 55%;
   left: 3%;
 }
-#middle{
-margin: 20px;
-position: relative;
-top: 10px;
+#middle {
+  margin: 20px;
+  position: relative;
+  top: 10px;
 }
-.date,.passengers,.class{
-display: flex;
-flex-direction: column;
+.date,
+.passengers,
+.class {
+  display: flex;
+  flex-direction: column;
 }
-.date input,.passengers input,.class select{
-margin-top: 3px;
-border: 2px solid white;
-outline: none;
-border-radius: 5px;
-width: 10rem;
+.date input,
+.passengers input,
+.class select {
+  margin-top: 3px;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 5px;
+  width: 10rem;
 }
-.sl{
-color: #fff;
-background-color: #c05f09;
-font-size: 15px;
+.sl {
+  color: #fff;
+  background-color: #c05f09;
+  font-size: 15px;
 }
-.date input::placeholder{
-color: #fff !important;
+.date input::placeholder {
+  color: #fff !important;
 }
-.search{
-border: 0;
-outline: 0;
-color: #fff;
+.search {
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background-color: #4628ff;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 11px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.flightInput input::placeholder {
+  color: #101010;
+}
+
+
+.fromData,.toData{
+position: absolute;
+top: 90%;
+width: 15rem;
+height: 10rem;
+overflow: scroll;
 background-color: #4628ff;
-margin-left: 20px;
-padding: 10px;
-border-radius: 11px;
-font-size: 15px;
-cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .For-Searching {
+    width: 70%;
+  }
+
+  .section1 {
+    flex-direction: column;
+    width: 100%;
+  }
+  #middle {
+    display: none;
+  }
+  .mains {
+    height: max-content;
+  }
+  .flightInput {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .section2 {
+    flex-direction: column;
+  }
+  .from,
+  .To {
+    width: 100%;
+  }
+  .from input,
+  .To input {
+    width: 20rem;
+  }
+  .section2 {
+    padding-top: 10px;
+  }
+  .section2,
+  .date,
+  .passengers,
+  .class {
+    width: 100%;
+  }
+  .date input {
+    width: 21.3rem;
+    margin-bottom: 10px;
+  }
+  .passengers input {
+    width: 21.2rem;
+    margin-bottom: 10px;
+  }
+  .class select {
+    width: 21.5rem;
+    margin-bottom: 10px;
+  }
+  .from {
+    padding-bottom: 10px;
+  }
+  .search {
+    margin-top: 20px;
+    width: 22rem;
+    margin-left: 0;
+  }
 }
