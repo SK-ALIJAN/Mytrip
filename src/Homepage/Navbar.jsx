@@ -87,7 +87,7 @@ const Navbar = () => {
         <div
           className="MyBookings"
           onClick={() => {
-            Navigate("./profile");
+            Navigate("/profile");
           }}
         >
           <BsFillPersonFill className="globeIcon" r />

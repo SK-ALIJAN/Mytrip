@@ -177,16 +177,23 @@
   color: #101010;
 }
 
-
-.fromData,.toData{
-position: absolute;
-top: 90%;
-width: 15rem;
-height: 10rem;
-overflow: scroll;
-background-color: #4628ff;
+.fromData,
+.toData {
+  position: absolute;
+  top: 90%;
+  width: 15rem;
+  height: 10rem;
+  overflow: scroll;
+  background-color: #ffffff;
+  border-radius: 11px;
+  color: #101010;
 }
 
+input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+input[type="date"]::-webkit-datetime-edit-text {
+  color: white;
+  font-size: 15px;
+}
 @media screen and (max-width: 1300px) {
   .For-Searching {
     width: 70%;

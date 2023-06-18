@@ -27,7 +27,7 @@ const Images = () => {
           </p>
         </div>
 
-        <div className="icon">
+        <div className="icond">
           <div className="icons">
             <div className="hotelIcon">
               <BsBuildingCheck />

@@ -21,11 +21,14 @@ let reducer = (state, action) => {
 };
 
 let initialState = { from: false, to: false };
+const today = new Date().toISOString().split("T")[0];
 
 const Searching = () => {
   let [radio, setRadio] = useState("Return");
   let [show, setShow] = useState(false);
   let [state, Dispatch] = useReducer(reducer, initialState);
+  let [fromshow, setfromShow] = useState(false);
+  let [toshow, settoShow] = useState(false);
 
   let handleChange = (e) => {
     setRadio(e.target.value);
@@ -95,9 +98,16 @@ const Searching = () => {
                       onChange={(e) => {
                         Dispatch({ type: "from", payload: e.target.value });
                       }}
+                      onClick={() => {
+                        setfromShow(!fromshow);
+                      }}
                     />
 
-                    {state.from ? <div className="fromData"></div> : ""}
+                    {state.from && fromshow ? (
+                      <div className="fromData">ddd</div>
+                    ) : (
+                      ""
+                    )}
                   </div>
                   <FaExchangeAlt className="ticks" id="middle" />
                   <div className="To">
@@ -109,19 +119,22 @@ const Searching = () => {
                       onChange={(e) => {
                         Dispatch({ type: "to", payload: e.target.value });
                       }}
+                      onClick={() => {
+                        settoShow(!toshow);
+                      }}
                     />
-                    {state.to ? <div className="toData"></div> : ""}
+                    {state.to && toshow ? <div className="toData"></div> : ""}
                   </div>
                 </section>
                 <section className="section2">
                   <div className="date">
                     <label htmlFor="Date">Date</label>
-                    <input type="date" />
+                    <input type="date" className="tarikh" min={today} />
                   </div>
                   {radio == "Return" ? (
                     <div className="date" id="return">
                       <label htmlFor="Date">Return</label>
-                      <input type="date" />
+                      <input type="date" className="tarikh" />
                     </div>
                   ) : (
                     ""
