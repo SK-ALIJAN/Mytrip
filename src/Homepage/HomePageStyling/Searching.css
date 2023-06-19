@@ -181,12 +181,28 @@
 .toData {
   position: absolute;
   top: 90%;
-  width: 15rem;
-  height: 10rem;
-  overflow: scroll;
-  background-color: #ffffff;
+  width: max-content;
+  background-color: #e5dddd;
   border-radius: 11px;
   color: #101010;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  z-index: 5;
+}
+.chunck_data {
+  background-color: teal;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  width: max-content;
+  margin: 5px;
+  cursor: pointer;
+}
+.chunck_data:hover {
+  background-color: #101010;
+  color: white;
 }
 
 input[type="date"]::-webkit-datetime-edit-fields-wrapper,
@@ -221,9 +237,8 @@ input[type="date"]::-webkit-datetime-edit-text {
   .To {
     width: 100%;
   }
-  .from input,
-  .To input {
-    width: 20rem;
+  .checkings {
+    width: 20.4rem !important;
   }
   .section2 {
     padding-top: 10px;

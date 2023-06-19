@@ -1,10 +1,18 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, {
+  useState,
+  useEffect,
+  useReducer,
+  useContext,
+  useRef,
+} from "react";
+import { useNavigate } from "react-router-dom";
 import "./HomePageStyling/Searching.css";
 import {
   FaPlaneDeparture,
   FaPlaneArrival,
   FaExchangeAlt,
 } from "react-icons/fa";
+import { Contextapi } from "../ContextApi";
 
 let reducer = (state, action) => {
   switch (action.type) {
@@ -29,6 +37,24 @@ const Searching = () => {
   let [state, Dispatch] = useReducer(reducer, initialState);
   let [fromshow, setfromShow] = useState(false);
   let [toshow, settoShow] = useState(false);
+  let from_ref = useRef("");
+  let to_ref = useRef("");
+  let Navigate = useNavigate();
+
+  let { states } = useContext(Contextapi);
+  const from = Object.values(
+    states.flight.reduce((acc, obj) => {
+      acc[obj.from] = obj;
+      return acc;
+    }, {})
+  ); // getting from data
+
+  const to = Object.values(
+    states.flight.reduce((acc, obj) => {
+      acc[obj.from] = obj;
+      return acc;
+    }, {})
+  ); // getting to data
 
   let handleChange = (e) => {
     setRadio(e.target.value);
@@ -43,8 +69,6 @@ const Searching = () => {
       clearTimeout(id);
     };
   }, []);
-
-  let handleinput = () => {};
 
   return (
     <>
@@ -91,7 +115,14 @@ const Searching = () => {
                   <div className="from">
                     <label htmlFor="From">From</label>
 
-                    <FaPlaneDeparture className="ticks" id="ftick" />
+                    <FaPlaneDeparture
+                      className="ticks"
+                      id="ftick"
+                      style={{
+                        display:
+                          from_ref.current.value === "" ? "block" : "none",
+                      }}
+                    />
                     <input
                       type="text"
                       placeholder=""
@@ -101,18 +132,50 @@ const Searching = () => {
                       onClick={() => {
                         setfromShow(!fromshow);
                       }}
+                      className="checkings"
+                      name="from"
+                      ref={from_ref}
                     />
 
                     {state.from && fromshow ? (
-                      <div className="fromData">ddd</div>
+                      <div className="fromData">
+                        {from.map((ele) => {
+                          return (
+                            <p
+                              className="chunck_data"
+                              key={ele.id}
+                              onClick={() => {
+                                from_ref.current.value = ele.from;
+                                setfromShow(false);
+                              }}
+                            >
+                              {ele.from}
+                            </p>
+                          );
+                        })}
+                      </div>
                     ) : (
                       ""
                     )}
                   </div>
-                  <FaExchangeAlt className="ticks" id="middle" />
+                  <FaExchangeAlt
+                    className="ticks"
+                    id="middle"
+                    onClick={() => {
+                      let swapingValue = from_ref.current.value;
+                      from_ref.current.value = to_ref.current.value;
+                      to_ref.current.value = swapingValue;
+                    }}
+                  />
                   <div className="To">
                     <label htmlFor="To">To</label>
-                    <FaPlaneArrival className="ticks" id="stick" />
+                    <FaPlaneArrival
+                      className="ticks"
+                      id="stick"
+                      style={{
+                        display: to_ref.current.value === "" ? "block" : "none",
+                      }}
+                    />
                     <input
                       type="text"
                       placeholder=""
@@ -122,26 +185,59 @@ const Searching = () => {
                       onClick={() => {
                         settoShow(!toshow);
                       }}
+                      className="checkings"
+                      name="to"
+                      ref={to_ref}
                     />
-                    {state.to && toshow ? <div className="toData"></div> : ""}
+                    {state.to && toshow ? (
+                      <div className="toData">
+                        {to.map((ele) => {
+                          return (
+                            <p
+                              className="chunck_data"
+                              key={ele.id}
+                              onClick={() => {
+                                to_ref.current.value = ele.to;
+                                settoShow(false);
+                              }}
+                            >
+                              {ele.to}
+                            </p>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </section>
                 <section className="section2">
                   <div className="date">
                     <label htmlFor="Date">Date</label>
-                    <input type="date" className="tarikh" min={today} />
+                    <input
+                      type="date"
+                      className="tarikh"
+                      min={today}
+                      required
+                    />
                   </div>
                   {radio == "Return" ? (
                     <div className="date" id="return">
                       <label htmlFor="Date">Return</label>
-                      <input type="date" className="tarikh" />
+                      <input type="date" className="tarikh" required />
                     </div>
                   ) : (
                     ""
                   )}
                   <div className="passengers">
                     <label htmlFor="Passengers">Passengers</label>
-                    <input type="number" min="1" max="10" />
+                    <input
+                      type="number"
+                      min="1"
+                      max="10"
+                      style={{ color: "white" }}
+                      required
+                    />
                   </div>
                   <div className="class">
                     <label htmlFor="Class">Class</label>
@@ -154,7 +250,19 @@ const Searching = () => {
                 </section>
               </div>
 
-              <button className="search">Search flights</button>
+              <button
+                className="search"
+                onClick={() => {
+                  let quary = {
+                    from: from_ref.current.value,
+                    to: to_ref.current.value,
+                  };
+                  localStorage.setItem("quary", JSON.stringify(quary));
+                  Navigate("/flight");
+                }}
+              >
+                Search flights
+              </button>
             </div>
           </div>
         </div>
