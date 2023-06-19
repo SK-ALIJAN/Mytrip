@@ -25,6 +25,7 @@ header {
   align-items: center;
   padding-bottom: 15px;
   background-color: #c05f09;
+  position: relative;
 }
 
 .icon {
@@ -48,6 +49,8 @@ input[type="password"] {
   border: 1px solid #ccc;
   background-color: #c05f09;
   width: 15rem;
+  color: #ffffff;
+  font-weight: 600;
 }
 input[type="checkbox"]{
 width: 1rem;
@@ -111,4 +114,10 @@ border-radius: 11px;
 letter-spacing: 2px;
 font-size: 15px;
 cursor: pointer;
+}
+.BSICON{
+background-color: #c05f09;
+position: absolute;
+left: 88%;
+color: #ffffff;
 }
