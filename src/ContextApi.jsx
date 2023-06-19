@@ -3,6 +3,7 @@ import { createContext, useReducer, useEffect } from "react";
 import axios from "axios";
 
 let Contextapi = createContext();
+let loginAuth = localStorage.getItem("loggedIN") ?? false;
 
 let flightUrl = `https://6487f0dd0e2469c038fcaded.mockapi.io/flight`;
 let hotelUrl = `https://6487f0dd0e2469c038fcaded.mockapi.io/hotel`;
@@ -30,7 +31,7 @@ const ContextProvider = ({ children }) => {
     flight: [],
     user: [],
   });
-  let [Auth, setAuth] = useState({ register: false, login: false });
+  let [Auth, setAuth] = useState({ register: false, login: loginAuth });
   let FetchData = async (url, type) => {
     let config = { url };
 
@@ -59,9 +60,11 @@ const ContextProvider = ({ children }) => {
       setAuth({ ...Auth, register: true });
     },
     login: () => {
+      localStorage.setItem("loggedIN", true);
       setAuth({ ...Auth, login: true });
     },
     logout: () => {
+      localStorage.setItem("loggedIN", false);
       setAuth({ ...Auth, login: false });
     },
     states,

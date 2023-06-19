@@ -3,7 +3,10 @@ import "./authentication.css";
 import Navbar from "../Homepage/Navbar";
 import Footer from "../Homepage/Footer";
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
+import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs";
+
 import { Contextapi } from "../ContextApi";
+import ErrorMessage from "./ErrorMessage";
 
 let reducer = (state, action) => {
   switch (action.type) {
@@ -22,8 +25,12 @@ let reducer = (state, action) => {
 
 const Authentication = () => {
   let [state, Dispatch] = useReducer(reducer, { login: false, signup: true });
-  let [text, setText] = useState({ name: "", email: "", password: "" });
+  let [text, setText] = useState({ name: "", email: "", password: "" }); //for signup
+  let [Ltext, setLText] = useState({ email: "", password: "" }); //for login
+  let [sHide, setSHide] = useState(true);
+  let [LHide, setLHide] = useState(true);
   let { register, login, states } = useContext(Contextapi);
+  let [error, setError] = useState(false);
 
   let handleregister = (e) => {
     e.preventDefault();
@@ -48,6 +55,22 @@ const Authentication = () => {
     }
   }
 
+  let handleLogin = (e) => {
+    e.preventDefault();
+    let userData = states.user.filter((ele, index) => {
+      return ele.email === Ltext.email && ele.password === Ltext.password;
+    });
+    if (userData.length !== 0) {
+      localStorage.setItem("loggedIN", userData[0].id);
+      login();
+    } else {
+      setError(true);
+    }
+  };
+  let handleError = () => {
+    setError(false);
+  };
+
   return (
     <>
       <Navbar />
@@ -55,14 +78,49 @@ const Authentication = () => {
         {state.login ? (
           <div className="form login">
             <header>Login</header>
-            <form action="#">
+            <form action="#" onSubmit={handleLogin}>
               <div className="row">
                 <FaEnvelope className="icon" />
-                <input type="text" placeholder="Email address" required />
+                <input
+                  type="text"
+                  placeholder="Email address"
+                  required
+                  value={Ltext.email}
+                  onChange={(e) => {
+                    setLText((prev) => {
+                      return { ...prev, email: e.target.value };
+                    });
+                  }}
+                />
               </div>
               <div className="row">
                 <FaLock className="icon" />
-                <input type="password" placeholder="Password" required />
+                <input
+                  type={LHide ? "password" : "text"}
+                  placeholder="Password"
+                  required
+                  value={Ltext.password}
+                  onChange={(e) => {
+                    setLText((prev) => {
+                      return { ...prev, password: e.target.value };
+                    });
+                  }}
+                />
+                {LHide ? (
+                  <BsEyeFill
+                    className="BSICON"
+                    onClick={() => {
+                      setLHide(false);
+                    }}
+                  />
+                ) : (
+                  <BsEyeSlashFill
+                    className="BSICON"
+                    onClick={() => {
+                      setLHide(true);
+                    }}
+                  />
+                )}
               </div>
               <div className="row button">
                 <input type="submit" value="Login" />
@@ -78,6 +136,7 @@ const Authentication = () => {
                 Sign up here
               </span>
             </p>
+            {error ? <ErrorMessage click={handleError} /> : ""}
           </div>
         ) : (
           <div className="form signup">
@@ -114,7 +173,7 @@ const Authentication = () => {
               <div className="row">
                 <FaLock className="icon" />
                 <input
-                  type="password"
+                  type={sHide ? "password" : "text"}
                   placeholder="Password"
                   required
                   onChange={(e) => {
@@ -124,6 +183,21 @@ const Authentication = () => {
                   }}
                   value={text.password}
                 />
+                {sHide ? (
+                  <BsEyeFill
+                    className="BSICON"
+                    onClick={() => {
+                      setSHide(false);
+                    }}
+                  />
+                ) : (
+                  <BsEyeSlashFill
+                    className="BSICON"
+                    onClick={() => {
+                      setSHide(true);
+                    }}
+                  />
+                )}
               </div>
               <div className="checkbox">
                 <input type="checkbox" id="signupCheck" />
