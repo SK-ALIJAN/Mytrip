@@ -1,0 +1,105 @@
+.skelaton{
+width: 50%;
+margin: auto;
+}
+/* .profile{
+width: 90%;
+margin: auto;
+color: white;
+padding: 20px;
+background-color: #807d7b;
+border-radius: 11px;
+}
+
+.username{
+background-color:#807d7b;
+}
+.profile-header {
+  text-align: center;
+}
+
+
+.profile-content {
+ background-color: #807d7b;
+}
+
+.logout-button {
+  /* Logout button styles */
+ 
+.profile {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  max-width: 500px;
+  min-width: 50%;
+  margin: 0 auto;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+ 
+}
+
+.username {
+  font-size: 24px;
+  color: #333; background-color:#f5f5f5;
+  text-transform: capitalize;
+}
+
+.profile-content {
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+}
+
+.h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: #ff7875;
+  padding: 10px;
+  border-radius: 11px;
+}
+
+.p {
+  margin-bottom: 20px;
+  background-color: #3333338a;
+  color: #f8f4f4;
+  padding: 10px;
+  border-radius: 11px;
+}
+.books{
+background-color: #ff7875;
+border-radius: 11px;
+padding-bottom: 5px;
+}
+.NoBooking{
+background-color: #ff7875;
+text-align: center;
+}
+.NoBooking>:nth-child(1){
+background-color: #ff7875;
+font-size: xx-large;
+}
+.NoBooking>p{
+font-weight: 600;
+letter-spacing: 2px;
+font-size: large;
+}
+.logout-button {
+  background-color: #c05f09;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.logout-button:hover {
+  background-color: #ff7875;
+}

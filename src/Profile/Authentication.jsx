@@ -1,4 +1,5 @@
 import React, { useReducer, useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import "./authentication.css";
 import Navbar from "../Homepage/Navbar";
 import Footer from "../Homepage/Footer";
@@ -7,6 +8,7 @@ import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs";
 
 import { Contextapi } from "../ContextApi";
 import ErrorMessage from "./ErrorMessage";
+import LoginSuccessMessage from "./LoginMessage";
 
 let reducer = (state, action) => {
   switch (action.type) {
@@ -24,6 +26,7 @@ let reducer = (state, action) => {
 };
 
 const Authentication = () => {
+  let Navigate = useNavigate();
   let [state, Dispatch] = useReducer(reducer, { login: false, signup: true });
   let [text, setText] = useState({ name: "", email: "", password: "" }); //for signup
   let [Ltext, setLText] = useState({ email: "", password: "" }); //for login
@@ -31,11 +34,13 @@ const Authentication = () => {
   let [LHide, setLHide] = useState(true);
   let { register, login, states } = useContext(Contextapi);
   let [error, setError] = useState(false);
+  let [message, setMessage] = useState(false);
 
   let handleregister = (e) => {
     e.preventDefault();
     api(text);
     setText({ name: "", email: "", password: "" });
+    Dispatch({ type: "login" });
   };
 
   async function api(details) {
@@ -61,8 +66,12 @@ const Authentication = () => {
       return ele.email === Ltext.email && ele.password === Ltext.password;
     });
     if (userData.length !== 0) {
-      localStorage.setItem("loggedIN", userData[0].id);
+      localStorage.setItem("loggedINUser", userData[0].id);
       login();
+      setMessage(true);
+      setTimeout(() => {
+        Navigate("/");
+      }, 1000);
     } else {
       setError(true);
     }
@@ -137,6 +146,7 @@ const Authentication = () => {
               </span>
             </p>
             {error ? <ErrorMessage click={handleError} /> : ""}
+            {message ? <LoginSuccessMessage /> : ""}
           </div>
         ) : (
           <div className="form signup">
