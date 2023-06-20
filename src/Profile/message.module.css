@@ -1,0 +1,32 @@
+.success-message {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10%;
+  z-index: 5;
+  text-align: center;
+}
+.icon-wrapper{
+background-color: #2ecc71;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.success-icon{
+background-color: #2ecc71;
+font-size: 25px;
+}
+
+.success-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: inherit;
+}
+
+.success-text {
+  font-size: 16px;
+  background-color: #2ecc71;
+}
