@@ -39,6 +39,11 @@ const Searching = () => {
   let [toshow, settoShow] = useState(false);
   let from_ref = useRef("");
   let to_ref = useRef("");
+  let dateRef = useRef(""),
+    returnref = useRef(""),
+    passRef = useRef(""),
+    classRef = useRef("");
+
   let Navigate = useNavigate();
 
   let { states } = useContext(Contextapi);
@@ -218,13 +223,13 @@ const Searching = () => {
                       type="date"
                       className="tarikh"
                       min={today}
-                      required
+                      ref={dateRef}
                     />
                   </div>
                   {radio == "Return" ? (
                     <div className="date" id="return">
                       <label htmlFor="Date">Return</label>
-                      <input type="date" className="tarikh" required />
+                      <input type="date" className="tarikh" ref={returnref} />
                     </div>
                   ) : (
                     ""
@@ -236,12 +241,12 @@ const Searching = () => {
                       min="1"
                       max="10"
                       style={{ color: "white" }}
-                      required
+                      ref={passRef}
                     />
                   </div>
                   <div className="class">
                     <label htmlFor="Class">Class</label>
-                    <select className="sl">
+                    <select className="sl" ref={classRef}>
                       <option value="economy">Economy</option>
                       <option value="business">Business</option>
                       <option value="first">First Class</option>
@@ -253,12 +258,47 @@ const Searching = () => {
               <button
                 className="search"
                 onClick={() => {
-                  let quary = {
-                    from: from_ref.current.value,
-                    to: to_ref.current.value,
-                  };
-                  localStorage.setItem("quary", JSON.stringify(quary));
-                  Navigate("/flight");
+                  let quary;
+                  if (
+                    radio == "Return" &&
+                    from_ref.current.value !== "" &&
+                    to_ref.current.value !== "" &&
+                    dateRef.current.value !== "" &&
+                    returnref.current.value !== "" &&
+                    passRef.current.value !== "" &&
+                    classRef.current.value !== ""
+                  ) {
+                    quary = {
+                      from: from_ref.current.value,
+                      to: to_ref.current.value,
+                      date: dateRef.current.value,
+                      return: returnref.current.value,
+                      passenger: passRef.current.value,
+                      class: classRef.current.value,
+                      type: "return",
+                    };
+                    localStorage.setItem("quary", JSON.stringify(quary));
+                  } else if (
+                    radio == "One-way" &&
+                    from_ref.current.value !== "" &&
+                    to_ref.current.value !== "" &&
+                    dateRef.current.value !== "" &&
+                    passRef.current.value !== "" &&
+                    classRef.current.value !== ""
+                  ) {
+                    quary = {
+                      from: from_ref.current.value,
+                      to: to_ref.current.value,
+                      date: dateRef.current.value,
+                      passenger: passRef.current.value,
+                      class: classRef.current.value,
+                      type: "one-way",
+                    };
+                    localStorage.setItem("quary", JSON.stringify(quary));
+                  } else {
+                  }
+
+                  Navigate("/flight/viewFlight");
                 }}
               >
                 Search flights

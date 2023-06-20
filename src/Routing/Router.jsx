@@ -6,6 +6,8 @@ import ContactUsPage from "../Homepage/ContactUs";
 import Authentication from "../Profile/Authentication";
 import PrivateRouter from "./PrivateRouter";
 import NotFoundPage from "./NotFoundPage";
+import Flight from "../Flight/Flight";
+import ViewFlight from "../Flight/ViewFlight";
 
 const Router = () => {
   return (
@@ -21,6 +23,8 @@ const Router = () => {
           </PrivateRouter>
         }
       />
+      <Route path="/flight" element={<Flight />} />
+      <Route path="/flight/viewFlight" element={<ViewFlight />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
