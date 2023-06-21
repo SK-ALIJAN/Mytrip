@@ -1,0 +1,85 @@
+.main_box {
+  background-color: transparent;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.main_box div {
+  background-color: transparent;
+}
+
+.firstline {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 0px 10px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+.details img {
+  width: 1.5rem;
+  background-color: transparent;
+  margin-right: 15px;
+}
+.details > div > p:nth-child(1) {
+  font-weight: 600;
+  background-color: transparent;
+}
+.details > div > p:nth-child(2) {
+  color: rgb(159, 159, 159);
+}
+.dept,
+.arive {
+  position: relative;
+  top: 10px;
+}
+.dept > p:nth-child(1),
+.arive > p:nth-child(1),
+.price > p:nth-child(1) {
+  font-size: 16px;
+  font-weight: 900;
+}
+.stop {
+  background-color: transparent;
+  position: relative;
+  top: 20px;
+}
+.stop p {
+  color: rgb(13, 13, 13);
+  font-weight: 600;
+  font-size: 15px;
+}
+.bookNow {
+  background-color: #c05f09;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: white;
+}
+.bookNow:hover {
+  background-color: #4628ff;
+  border-radius: 5px;
+}
+.main_box > button {
+  background-color: teal;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: white;
+  border-radius: 11px;
+}
+.other{
+margin-top: 10px;
+}

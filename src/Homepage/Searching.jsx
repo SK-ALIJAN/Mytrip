@@ -259,46 +259,48 @@ const Searching = () => {
                 className="search"
                 onClick={() => {
                   let quary;
-                  if (
-                    radio == "Return" &&
-                    from_ref.current.value !== "" &&
-                    to_ref.current.value !== "" &&
-                    dateRef.current.value !== "" &&
-                    returnref.current.value !== "" &&
-                    passRef.current.value !== "" &&
-                    classRef.current.value !== ""
-                  ) {
-                    quary = {
-                      from: from_ref.current.value,
-                      to: to_ref.current.value,
-                      date: dateRef.current.value,
-                      return: returnref.current.value,
-                      passenger: passRef.current.value,
-                      class: classRef.current.value,
-                      type: "return",
-                    };
-                    localStorage.setItem("quary", JSON.stringify(quary));
-                  } else if (
-                    radio == "One-way" &&
-                    from_ref.current.value !== "" &&
-                    to_ref.current.value !== "" &&
-                    dateRef.current.value !== "" &&
-                    passRef.current.value !== "" &&
-                    classRef.current.value !== ""
-                  ) {
-                    quary = {
-                      from: from_ref.current.value,
-                      to: to_ref.current.value,
-                      date: dateRef.current.value,
-                      passenger: passRef.current.value,
-                      class: classRef.current.value,
-                      type: "one-way",
-                    };
-                    localStorage.setItem("quary", JSON.stringify(quary));
+                  if (radio == "Return") {
+                    if (
+                      from_ref.current.value !== "" &&
+                      to_ref.current.value !== "" &&
+                      dateRef.current.value !== "" &&
+                      returnref.current.value !== "" &&
+                      passRef.current.value !== "" &&
+                      classRef.current.value !== ""
+                    ) {
+                      quary = {
+                        from: from_ref.current.value,
+                        to: to_ref.current.value,
+                        date: dateRef.current.value,
+                        return: returnref.current.value,
+                        passenger: passRef.current.value,
+                        class: classRef.current.value,
+                        type: "return",
+                      };
+                      localStorage.setItem("quary", JSON.stringify(quary));
+                      Navigate("/flight/viewFlight");
+                    }
+                  } else if (radio == "One-way") {
+                    if (
+                      from_ref.current.value !== "" &&
+                      to_ref.current.value !== "" &&
+                      dateRef.current.value !== "" &&
+                      passRef.current.value !== "" &&
+                      classRef.current.value !== ""
+                    ) {
+                      quary = {
+                        from: from_ref.current.value,
+                        to: to_ref.current.value,
+                        date: dateRef.current.value,
+                        passenger: passRef.current.value,
+                        class: classRef.current.value,
+                        type: "one-way",
+                      };
+                      localStorage.setItem("quary", JSON.stringify(quary));
+                      Navigate("/flight/viewFlight");
+                    }
                   } else {
                   }
-
-                  Navigate("/flight/viewFlight");
                 }}
               >
                 Search flights
