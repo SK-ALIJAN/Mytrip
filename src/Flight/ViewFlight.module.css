@@ -1,0 +1,80 @@
+.main_section {
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+}
+.under_main_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.under_main_section > div {
+  font-size: 15px;
+  margin-right: 20px;
+}
+.under_main_section > div > P:nth-child(1) {
+  background-color: rgba(63, 62, 62, 0.333);
+  color: #4628ff;
+  text-align: center;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+}
+.under_main_section > div > P:nth-child(2) {
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+.flight_Available {
+  width: 90%;
+  margin: auto;
+}
+.flightDetails {
+  color: white;
+  font-size: large;
+  /* background-color: #4628ff;
+border-radius: 11px;
+width: max-content; */
+  padding: 10px;
+  font-weight: 600;
+}
+.AllFlight{
+background-color: aliceblue;
+width: 90%;
+margin: auto;
+margin-top: 30px;
+border-radius: 11px;
+padding: 10px;
+}
+.NoFlight{
+width: 90%;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: transparent;
+}
+.SortedBy{
+background-color: rgba(99, 97, 97, 0.396);
+color: white;
+display: flex;
+justify-content: space-between;
+padding: 0 20px;
+font-size: 12px;
+border-radius: 11px;
+}
+.SortedBy P{
+background-color: transparent;
+display: flex;
+align-items: center;
+}
+.SortedBy>p:nth-child(1){
+font-weight: 600;
+letter-spacing: 2px;
+font-size: 13px;
+}
+.AvailableFlight{
+background-color: white;
+}
