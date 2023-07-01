@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./hotelOffer.module.css";
 import { useNavigate } from "react-router-dom";
+
 const HotelOffer = (props) => {
   let Navigate = useNavigate();
- 
+
   return (
     <div className={styles.offerBox}>
       <div className={styles.images}>

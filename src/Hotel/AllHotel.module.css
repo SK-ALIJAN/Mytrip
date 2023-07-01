@@ -1,0 +1,37 @@
+.Hotel_available {
+  margin: 10px 40px;
+  /* background-color: white; */
+  /* height: 60vh; */
+  border-radius: 11px;
+}
+#notAvailablehotel {
+  text-align: center;
+  background-color: transparent;
+  width: 20rem;
+  margin: auto;
+}
+
+#notAvailablehotel > p:nth-child(1) {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: teal;
+  text-align: center;
+}
+#notAvailablehotel > p:nth-child(2) {
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: rgb(255, 254, 254);
+  text-align: center;
+}
+#getData {
+  background-color: white;
+  width: 94%;
+  margin: auto;
+}
+.devide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

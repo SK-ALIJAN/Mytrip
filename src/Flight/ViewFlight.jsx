@@ -6,6 +6,7 @@ import Footer from "../Homepage/Footer";
 import Style from "./ViewFlight.module.css";
 import NoFlight from "./NoFlight";
 import AvailableFlight from "./AvailableFlight";
+
 const ViewFlight = () => {
   let Quary = JSON.parse(localStorage.getItem("quary"));
   let { states } = useContext(Contextapi);
