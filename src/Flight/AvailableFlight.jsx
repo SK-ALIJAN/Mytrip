@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Styles from "./AvailableFlight.module.css";
+import { Contextapi } from "../ContextApi";
+
 const AvailableFlight = (props) => {
   let [click, setClick] = useState(false);
   let Navigate = useNavigate();
+  let { Auth } = useContext(Contextapi);
+
   return (
     <div className={Styles.main_box}>
       <div className={Styles.firstline}>
@@ -35,8 +39,10 @@ const AvailableFlight = (props) => {
           <button
             className={Styles.bookNow}
             onClick={() => {
-              localStorage.setItem("toPayment", JSON.stringify(props));
-              Navigate("/payment");
+              if (Auth.login) {
+                localStorage.setItem("toPayment", JSON.stringify(props));
+                Navigate("/payment");
+              } else Navigate("/authentication");
             }}
           >
             Book Now

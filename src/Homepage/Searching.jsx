@@ -32,7 +32,7 @@ let initialState = { from: false, to: false };
 const today = new Date().toISOString().split("T")[0];
 
 const Searching = () => {
-  let [radio, setRadio] = useState("Return");
+  let [radio, setRadio] = useState("One-way");
   let [show, setShow] = useState(false);
   let [state, Dispatch] = useReducer(reducer, initialState);
   let [fromshow, setfromShow] = useState(false);
@@ -88,7 +88,6 @@ const Searching = () => {
                 <input
                   type="radio"
                   name="radio"
-                  defaultChecked
                   value="Return"
                   onChange={handleChange}
                 />
@@ -100,6 +99,7 @@ const Searching = () => {
                   name="radio"
                   value="One-way"
                   onChange={handleChange}
+                  defaultChecked
                 />
                 <span className="name">One-way</span>
               </label>

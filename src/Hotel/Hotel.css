@@ -1,0 +1,49 @@
+.HotelImage {
+  width: 70%;
+  display: block;
+  margin: auto;
+  border-radius: 31px;
+  position: relative;
+  bottom: 30px;
+}
+#explore_ {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.fewImage {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 11px;
+}
+.FourSide {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+}
+.FourSide img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 11px;
+  background-color: transparent;
+}
+.FourSide div {
+  background-color: transparent;
+  margin-right: 10px;
+  border-radius: 11px;
+  text-align: center;
+  font-weight: 900;
+  color: #c05f09;
+  cursor: pointer;
+}
+.AdvertisementImage {
+  width: 91%;
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  border-radius: 11px;
+}

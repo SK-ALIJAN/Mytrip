@@ -8,6 +8,9 @@ import PrivateRouter from "./PrivateRouter";
 import NotFoundPage from "./NotFoundPage";
 import Flight from "../Flight/Flight";
 import ViewFlight from "../Flight/ViewFlight";
+import Hotel from "../Hotel/Hotel";
+import AllHotel from "../Hotel/AllHotel";
+import Payment from "../Payment/Payment";
 
 const Router = () => {
   return (
@@ -23,8 +26,11 @@ const Router = () => {
           </PrivateRouter>
         }
       />
+      <Route path="/payment" element={<Payment />} />
       <Route path="/flight" element={<Flight />} />
+      <Route path="/hotel" element={<Hotel />} />
       <Route path="/flight/viewFlight" element={<ViewFlight />} />
+      <Route path="/hotel/allHotel" element={<AllHotel />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

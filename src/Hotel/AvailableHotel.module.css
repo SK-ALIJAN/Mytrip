@@ -1,0 +1,160 @@
+#main_container {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 48rem; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#main_container > .imageDiv {
+  display: flex;
+  background-color: transparent;
+  width: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.titleImage {
+  width: 20rem;
+  height: 16rem;
+  margin-right: 5px;
+  background-color: transparent;
+}
+.insideImage {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.insideImage img {
+  width: 5rem;
+  height: 3.5rem;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+.detailsDiv {
+  background-color: transparent;
+  width: 50%;
+}
+.firstoneT {
+  background-color: transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.firstoneT > p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.firstoneT > p:nth-child(2) {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.firstoneS {
+  display: flex;
+  background-color: transparent;
+
+  align-items: center;
+}
+.firstoneS > p:nth-child(1) {
+  background-color: #c05f09;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  width: 2rem;
+  height: 1rem;
+  margin-right: 5px;
+  padding: 3px;
+}
+#iconicon {
+  background-color: transparent;
+  margin-left: 4px;
+}
+.iconicons {
+  background-color: transparent;
+  margin: 0px 8px;
+  color: #c05f09;
+}
+.firstoneS > p:nth-child(2),
+.firstoneS > p:nth-child(3) {
+  font-size: 13px;
+  margin-left: 5px;
+}
+.facilities {
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.pricess {
+  background-color: transparent;
+  margin: 0;
+}
+.pricess > div {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.pricess > div > p {
+  margin-right: 10px;
+  font-weight: 600;
+}
+.pricess > div > :nth-last-child(1) {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+.pricess > div + p {
+  font-size: 13px;
+  position: relative;
+  bottom: 20px;
+}
+.pricess + div {
+  display: flex;
+  background-color: transparent;
+}
+.pricess + div > :nth-child(1) {
+  background-color: transparent;
+  margin-right: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pricess + div > :nth-child(2) {
+  border: 0;
+  background-color: #c05f09;
+  color: white;
+  cursor: pointer;
+}
+
+.LeftIcon,
+.RightIcon {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.452);
+  width: 2rem;
+  height: 2rem;
+  color: #10100f8a;
+  border-radius: 100%;
+}
+.LeftIcon:hover,
+.RightIcon:hover {
+  background-color: #c05f09;
+  color: white;
+  display: grid;
+  place-content: center;
+}
+.LeftIcon,
+.RightIcon {
+  top: 7rem;
+}
+.LeftIcon {
+  left: 1rem;
+}
+.RightIcon {
+  left: 17rem;
+}

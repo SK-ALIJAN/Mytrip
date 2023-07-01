@@ -32,13 +32,26 @@ const Navbar = () => {
     }
   };
 
+  let Default = {
+    color: "white",
+  };
+  let activeLink = {
+    color: "#c05f09",
+  };
+
   return (
     <nav>
       <div className="leftbutton">
         <Logo />
         <div className="Menu">
           {link.map((nav, index) => (
-            <NavLink key={index} to={nav.to}>
+            <NavLink
+              key={index}
+              to={nav.to}
+              style={({ isActive }) =>
+                isActive ? activeLink : Default
+              }
+            >
               {nav.label}
             </NavLink>
           ))}
