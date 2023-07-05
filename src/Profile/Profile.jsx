@@ -1,39 +1,49 @@
-import React, { useState } from "react";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
+import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { Contextapi } from "../ContextApi";
 import Navbar from "../Homepage/Navbar";
 import Footer from "../Homepage/Footer";
 import styles from "./profile.module.css";
 import { BiSad } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
   let data = localStorage.getItem("loggedINUser");
+  let Auth = localStorage.getItem("loggedIN");
   let bookings = JSON.parse(localStorage.getItem("bookings"));
   let { states, logout } = useContext(Contextapi);
+  // let Navigate=useNavigate();
+  // useEffect(()=>{
+  //  if (Auth===false) {
+  //   Navigate('/authentication')
+    
+  // }
+  // },[])
   let [user, setUser] = useState(false);
-  let userData = states.user.filter((ele) => {
+  let [userData, setuserData] = useState({});
+  let usData = states.user.filter((ele) => {
     return ele.id === data;
   });
   setTimeout(() => {
+    setuserData(usData);
     setUser(true);
   }, 500);
-
+ 
   return (
     <>
       <Navbar />
+
       {user == false ? (
-         <div className={styles.loader}>
-      <div className={styles.wrapper}>
-        <div className={styles.circle}></div>
-        <div className={styles['line-1']}></div>
-        <div className={styles['line-2']}></div>
-        <div className={styles['line-3']}></div>
-        <div className={styles['line-4']}></div>
-      </div>
-    </div>
-      ) : (
+        <div className={styles.loader}>
+          <div className={styles.wrapper}>
+            <div className={styles.circle}></div>
+            <div className={styles["line-1"]}></div>
+            <div className={styles["line-2"]}></div>
+            <div className={styles["line-3"]}></div>
+            <div className={styles["line-4"]}></div>
+          </div>
+        </div>
+      ) : userData.length !== 0 ? (
         <div className={styles.profile}>
           <div className={styles["profile-header"]}>
             <h2 className={styles.username}>{userData[0].name}</h2>
@@ -62,7 +72,10 @@ const Profile = () => {
             </button>
           </div>
         </div>
+      ) : (
+        ""
       )}
+
       <Footer />
     </>
   );

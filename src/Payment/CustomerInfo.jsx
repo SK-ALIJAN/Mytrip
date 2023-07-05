@@ -45,11 +45,11 @@ const CustomerInfo = () => {
       <div>
         <div>
           <label htmlFor="FirstName">First Name</label>
-          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="First Name, Ex: Sk" />
         </div>
         <div>
           <label htmlFor="LasttName">Last Name</label>
-          <input type="text" placeholder="Last Name" />
+          <input type="text" placeholder="Last Name, Ex: Alijan" />
         </div>
         <div>
           <label htmlFor="Email">Email</label>
@@ -60,7 +60,7 @@ const CustomerInfo = () => {
       <div>
         <div>
           <label htmlFor="Address">Address</label>
-          <input type="text" placeholder="Address" />
+          <input type="text" placeholder="Address, Ex: Kolkata" />
         </div>
         <div>
           <label htmlFor="country">Country</label>

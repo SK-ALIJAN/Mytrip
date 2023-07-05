@@ -1,0 +1,20 @@
+.mainDiv {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.mainDiv>p{
+text-align: center;
+font-weight: 900;
+font-size: large;
+}
+.Hotelab,.Hotelab>div,.Flightabs,.Flightabs>div{
+background-color: transparent;
+}
+.Hotelab>div,.Flightabs>div {
+display: flex;
+justify-content: space-between;
+}

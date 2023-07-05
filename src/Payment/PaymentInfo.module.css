@@ -3,6 +3,12 @@
   margin-top: 30px;
 }
 
+.head>p{
+ font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
 .radio {
   background-color: #c05f09;
   border-radius: 3px;
@@ -19,4 +25,17 @@ height: 20px;
 .inputT:checked {
   background-image: linear-gradient(180deg, #95d891, #74bbad);
   color: #fff;
+}
+.completeCheckout{
+margin-top: 20px;
+padding: 10px;
+border-radius: 11px;
+cursor: pointer;
+background-color: #c05f09;
+border: 0;
+color: white;
+margin-bottom: 20px;
+}
+.completeCheckout:hover{
+background-color: #4f37e8;
 }

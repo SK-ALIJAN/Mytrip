@@ -26,7 +26,14 @@ const Router = () => {
           </PrivateRouter>
         }
       />
-      <Route path="/payment" element={<Payment />} />
+      <Route
+        path="/payment"
+        element={
+          <PrivateRouter>
+            <Payment />
+          </PrivateRouter>
+        }
+      />
       <Route path="/flight" element={<Flight />} />
       <Route path="/hotel" element={<Hotel />} />
       <Route path="/flight/viewFlight" element={<ViewFlight />} />
