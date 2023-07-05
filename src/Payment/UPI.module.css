@@ -1,0 +1,93 @@
+.upiOption {
+  margin-top: 10px;
+  background-color: #4f37e8;
+  padding: 10px;
+  border-radius: 11px;
+}
+.upiOption > div {
+  background-color: #4f37e8;
+  display: flex;
+  justify-content: space-between;
+}
+.upiOption > div div {
+  background-color: #4f37e8;
+}
+.upiTitle {
+  background-color: #4f37e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upiTitle img {
+  background-color: #ffffff;
+  border-radius: 11px;
+  margin-right: 10px;
+}
+.upiTitle p {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.vpa {
+  background-color: #4f37e8;
+  color: white;
+  text-align: center;
+}
+.vpa > p {
+  margin-top: 20px;
+}
+.vpa form {
+  background-color: #4f37e8;
+}
+.vpa form input[type="submit"] {
+  /* width: 50%; */
+  margin-bottom: 20px;
+}
+.vpa form > input:nth-child(1) {
+  background-color: #4f37e8;
+}
+.vpa form > input:nth-child(1) + div {
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+}
+.vpa form > input:nth-child(1) + div > p:nth-child(1) {
+  margin-right: 20px;
+  font-weight: 600;
+}
+.vpa form > input:nth-child(1) + div > p:nth-child(2) {
+  background-color: white;
+  color: #4f37e8;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.imagesHere {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagesHere img {
+  background-color: #4f37e8;
+  margin-right: 20px;
+}
+#pleaseNote {
+  background-color: #c05f09;
+  padding: 10px;
+  font-size: 11px;
+  color: white;
+  width: 50%;
+  border-radius: 11px;
+  font-weight: 900;
+  /* height: max-content; */
+}
+#pleaseNote > p {
+  font-size: 17px;
+}
+#pleaseNote ul,
+#pleaseNote ul li {
+  background-color: inherit;
+}
+#pleaseNote ul li{
+margin-bottom: 10px;
+}

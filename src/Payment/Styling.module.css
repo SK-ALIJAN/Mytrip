@@ -14,8 +14,9 @@
   font-size: 15px;
 }
 .CustomerInfo > p {
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 2px;
+  font-size: 18px;
 }
 .CustomerInfo > div,
 .CustomerInfo > div div,

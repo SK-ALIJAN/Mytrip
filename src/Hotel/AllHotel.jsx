@@ -19,7 +19,6 @@ const AllHotel = () => {
       return lsdata == ele_data;
     }
   });
-  console.log(filterdata);
   return (
     <>
       <Navbar />

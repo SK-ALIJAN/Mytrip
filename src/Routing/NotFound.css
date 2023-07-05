@@ -5,6 +5,8 @@
   justify-content: center;
   height: 100vh;
   background-color: #101010;
+  position: relative;
+  bottom: 80px;
 }
 
 .not-found-heading {

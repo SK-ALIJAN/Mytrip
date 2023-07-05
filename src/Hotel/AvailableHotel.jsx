@@ -100,6 +100,7 @@ const AvailableHotel = (data) => {
           <button
             onClick={() => {
               if (Auth.login) {
+              localStorage.setItem('toPayment',JSON.stringify(data));
                 Navigate("/payment");
               } else {
                 Navigate("/authentication");

@@ -65,6 +65,7 @@ const ContextProvider = ({ children }) => {
     },
     logout: () => {
       localStorage.setItem("loggedIN", false);
+      localStorage.setItem("loggedINUser", null);
       setAuth({ ...Auth, login: false });
     },
     states,
