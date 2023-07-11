@@ -13,6 +13,7 @@
     "axios": "^1.4.0",
     "framer-motion": "^10.12.16",
     "react": "^18.2.0",
+    "react-awesome-slider": "^4.1.0",
     "react-datepicker": "^4.14.0",
     "react-dom": "^18.2.0",
     "react-headroom": "^3.2.1",
@@ -46,5 +47,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "."
 }

@@ -20,8 +20,9 @@
   border: 0;
   outline: 0;
   border-radius: 0;
-  background-color:transparent !important;
+  background-color: transparent !important;
   color: #c05f09 !important;
+  caret-color: #c05f09;
 }
 .search_input::placeholder {
   color: #c05f09;
@@ -40,30 +41,30 @@
   font-size: 15px;
   font-weight: 600;
 }
-.section_main input{
-background-color: aliceblue !important;
-border: 0;
-color: #c05f09 !important;
+.section_main input {
+  background-color: aliceblue !important;
+  border: 0;
+  color: #c05f09 !important;
 }
 input[type="date"]::-webkit-datetime-edit-fields-wrapper,
 input[type="date"]::-webkit-datetime-edit-text {
-  color:#c05f09;
+  color: #c05f09;
   font-size: 15px;
   font-weight: 600;
 }
-.section_main input::placeholder{
-color: #c05f09;
-font-weight: 600;
+.section_main input::placeholder {
+  color: #c05f09;
+  font-weight: 600;
 }
-.search_button{
-background-color: #c05f09;
-height: 3rem;
-width: 6rem;
-border: 0;
-cursor: pointer;
-padding: 7px;
-color: white;
+.search_button {
+  background-color: #c05f09;
+  height: 3rem;
+  width: 6rem;
+  border: 0;
+  cursor: pointer;
+  padding: 7px;
+  color: white;
 }
-.search_button:hover{
-background-color: #4628ff;
+.search_button:hover {
+  background-color: #4628ff;
 }

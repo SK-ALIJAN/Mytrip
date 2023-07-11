@@ -9,6 +9,8 @@ import { BiFoodMenu } from "react-icons/bi";
 import Style from "./AvailableHotel.module.css";
 import { Contextapi } from "../ContextApi";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import HotelDetails from "./HotelDetails";
 
 const AvailableHotel = (data) => {
   let ImageRef = useRef(null);
@@ -16,7 +18,7 @@ const AvailableHotel = (data) => {
   let imageIndex;
   let { Auth } = useContext(Contextapi);
   let Navigate = useNavigate();
-
+  let [hotelView, setHotelview] = useState(false);
   useEffect(() => {
     let id = setInterval(() => {
       if (num > 3) {
@@ -30,6 +32,10 @@ const AvailableHotel = (data) => {
       clearInterval(id);
     };
   }, []);
+
+  let onClose = () => {
+    setHotelview(false);
+  };
 
   return (
     <section id={Style.main_container}>
@@ -96,13 +102,21 @@ const AvailableHotel = (data) => {
         </div>
 
         <div>
-          <button>View Deatils</button>
+          <button
+            onClick={() => {
+              localStorage.setItem("carrentPage", "hotel/allHotel");
+              setHotelview(true);
+            }}
+          >
+            View Deatils
+          </button>
           <button
             onClick={() => {
               if (Auth.login) {
-              localStorage.setItem('toPayment',JSON.stringify(data));
+                localStorage.setItem("toPayment", JSON.stringify(data));
                 Navigate("/payment");
               } else {
+                localStorage.setItem("carrentPage", "hotel/allHotel");
                 Navigate("/authentication");
               }
             }}
@@ -111,6 +125,7 @@ const AvailableHotel = (data) => {
           </button>
         </div>
       </div>
+      {hotelView ? <HotelDetails {...data} onClose={onClose} /> : ""}
     </section>
   );
 };

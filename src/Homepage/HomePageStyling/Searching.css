@@ -173,6 +173,11 @@
   font-size: 15px;
   cursor: pointer;
 }
+.search:hover{
+background-color: white;
+color: #c05f09;
+font-weight: 600;
+}
 .flightInput input::placeholder {
   color: #101010;
 }
@@ -210,6 +215,7 @@ input[type="date"]::-webkit-datetime-edit-text {
   color: white;
   font-size: 15px;
 }
+
 @media screen and (max-width: 1300px) {
   .For-Searching {
     width: 70%;

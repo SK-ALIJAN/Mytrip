@@ -15,7 +15,7 @@ const CurrentCart = () => {
           </div>
           <div>
             <p>Place :</p>
-            <p>{data.place}</p>
+            <p>{data.name}</p>
           </div>
 
           <div>

@@ -27,7 +27,7 @@ const ContactUsPage = () => {
                 </div>
                 <div className="contact-item">
                   <FaEnvelope />
-                  <span>Email: Connect2skalijan@gmail.com</span>
+                  <span>Email: connect2skalijan@gmail.com </span>
                 </div>
                 <div className="contact-item">
                   <FaMapMarker />
@@ -64,7 +64,7 @@ const ContactUsPage = () => {
                 </form>
                 {show ? (
                   <p className="message">
-                    Thank you , We'll Get Back to You Soon!
+                    Thank you! , We'll get back to you soon!
                   </p>
                 ) : (
                   ""

@@ -12,13 +12,7 @@ const Profile = () => {
   let Auth = localStorage.getItem("loggedIN");
   let bookings = JSON.parse(localStorage.getItem("bookings"));
   let { states, logout } = useContext(Contextapi);
-  // let Navigate=useNavigate();
-  // useEffect(()=>{
-  //  if (Auth===false) {
-  //   Navigate('/authentication')
-    
-  // }
-  // },[])
+
   let [user, setUser] = useState(false);
   let [userData, setuserData] = useState({});
   let usData = states.user.filter((ele) => {
@@ -28,7 +22,7 @@ const Profile = () => {
     setuserData(usData);
     setUser(true);
   }, 500);
- 
+
   return (
     <>
       <Navbar />
@@ -45,9 +39,17 @@ const Profile = () => {
         </div>
       ) : userData.length !== 0 ? (
         <div className={styles.profile}>
-          <div className={styles["profile-header"]}>
-            <h2 className={styles.username}>{userData[0].name}</h2>
+          <div className={styles.profileImage}>
+            <div className={styles["profile-header"]}>
+              <h2 className={styles.username}>
+                {userData[0].name.substring(0, 1)}
+              </h2>
+            </div>
+            <div className={styles["profile-header"]}>
+              <h2 className={styles.username}>{userData[0].name}</h2>
+            </div>
           </div>
+
           <div className={styles["profile-content"]}>
             <h3 className={styles.h3}>Email</h3>
             <p className={styles.p}>{userData[0].email}</p>
@@ -63,7 +65,31 @@ const Profile = () => {
                   <p>No Booking Available!</p>
                 </div>
               ) : (
-                ""
+                <div className={styles.bookingsShow}>
+                  {bookings.map((ele) => {
+                    if (ele.category !== undefined) {
+                      return (
+                        <div key={ele}>
+                          <p>Booking type : Hotel </p>
+                          <p>Hotel's Name : {ele.hotel_name}</p>
+                             <p>Date : {ele.date}</p>
+                          <p>Payment Mode : {ele.payment}</p>
+                          <p>Payment Status : Successfull</p>
+                        </div>
+                      );
+                    } else {
+                      return (
+                        <div key={ele}>
+                          <p>Booking type : Flight</p>
+                          <p>Flight's Name : {ele.name}</p>
+                            <p>Date : {ele.date}</p>
+                          <p>Payment Mode : {ele.payment}</p>
+                          <p>Payment Status : Successfull</p>
+                        </div>
+                      );
+                    }
+                  })}
+                </div>
               )}
             </div>
 

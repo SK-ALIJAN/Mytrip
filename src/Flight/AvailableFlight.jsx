@@ -42,7 +42,10 @@ const AvailableFlight = (props) => {
               if (Auth.login) {
                 localStorage.setItem("toPayment", JSON.stringify(props));
                 Navigate("/payment");
-              } else Navigate("/authentication");
+              } else {
+              localStorage.setItem('carrentPage','flight/viewFlight');
+              Navigate('/authentication')
+              };
             }}
           >
             Book Now
