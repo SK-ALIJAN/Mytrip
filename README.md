@@ -1,7 +1,8 @@
 ## Mytrip
 <br>
-Experience a world of convenience with Myrip, your go-to platform for effortlessly booking flights and hotels, transforming travel planning into an enjoyable journey.  <br><br>
-<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/36828ded-f6d5-40c2-9edf-87c2a317fbb7"></p> 
+Elevate your travel adventures with Myrip, where flight and hotel reservations are made simple, allowing you to focus on creating unforgettable memories.Experience the convenience of Myrip's user-friendly interface and unlock a world of endless possibilities for your dream vacation.  <br><br>
+<p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/de50f642-3eda-4a8c-b2d2-3f23493af80f"></p> 
+
 
 ****************************************************************************************
 Deployed link:-
