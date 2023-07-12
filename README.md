@@ -1,7 +1,8 @@
 ## Mytrip
 <br>
 Elevate your travel adventures with Myrip, where flight and hotel reservations are made simple, allowing you to focus on creating unforgettable memories.Experience the convenience of Myrip's user-friendly interface and unlock a world of endless possibilities for your dream vacation.  <br><br>
-<p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/de50f642-3eda-4a8c-b2d2-3f23493af80f"></p> 
+<p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/b328bdaf-2853-48ee-b95a-e2b58325e726"></p> 
+
 
 
 ****************************************************************************************
@@ -33,14 +34,26 @@ It is individual project made in 10 days
 
 
 ****************************************************************************************
-## Preview <br>
-<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/e0f60f64-cdeb-4b2c-8741-77bff9641ce1"></p> <br>
+## Preview of Mytrip <br>
+****************************************************************************************
+## Authentication Page
+<p align="center"><img src="(https://github.com/SK-ALIJAN/Mytrip/assets/106768235/01062312-45a2-4690-ab9a-0bc9fd009b73"></p> <br>
+****************************************************************************************
+## Flight Booking Page
+<p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/41c9cd5e-96c8-4a99-a3fc-34bd9c40d19c"></p> <br>
 
-<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/a31a8028-e1da-4181-882d-3bf86835628c"></p> <br>
+****************************************************************************************
+## Flight Show
+<p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/e17f9dc3-f17c-4b13-8487-6aebe64b1a76"></p> <br>
+<p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/bee1e6de-964c-42a5-a485-71465c1a1a50"></p> <br>
 
-<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/68074bfd-dc07-4ee3-bea2-3492ffedaf7a"></p> <br>
 
-<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/00664966-aa37-41fd-862c-e8607b5ae4ee"></p> <br>
+****************************************************************************************
+## Hotel Booking page
+<p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/a4f88720-c74b-4f01-9b7e-075d0bdd765f"></p> <br>
+
+****************************************************************************************
+
 
 <p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/092997a6-6edb-4c4f-a57d-56d23e23b414"></p> <br>
 
