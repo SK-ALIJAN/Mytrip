@@ -37,7 +37,8 @@ It is individual project made in 10 days
 ## Preview of Mytrip <br>
 ****************************************************************************************
 ## Authentication Page
-<p align="center"><img src="(https://github.com/SK-ALIJAN/Mytrip/assets/106768235/01062312-45a2-4690-ab9a-0bc9fd009b73"></p> <br>
+<p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/01062312-45a2-4690-ab9a-0bc9fd009b73"></p> <br>
+
 ****************************************************************************************
 ## Flight Booking Page
 <p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/41c9cd5e-96c8-4a99-a3fc-34bd9c40d19c"></p> <br>
