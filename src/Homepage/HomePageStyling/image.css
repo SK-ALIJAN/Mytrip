@@ -8,6 +8,10 @@
   height: 18rem;
   border-radius: 15px;
 }
+.main img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
 .firstline {
   display: flex;
   justify-content: space-between;
@@ -45,10 +49,11 @@
   top: 30%;
   font-size: 12px;
   letter-spacing: 2px;
-  font-weight: 600;background-color: #101010;
+  font-weight: 600;
+  background-color: #101010;
 }
-.icon{
-background-color: #101010;
+.icon {
+  background-color: #101010;
 }
 
 .icons {

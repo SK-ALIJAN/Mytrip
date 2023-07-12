@@ -31,6 +31,10 @@
   border-radius: 11px;
   background-color: transparent;
 }
+.FourSide img:hover{
+opacity: 0.8;
+cursor: pointer;
+}
 .FourSide div {
   background-color: transparent;
   margin-right: 10px;

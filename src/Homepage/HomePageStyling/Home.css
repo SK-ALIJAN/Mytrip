@@ -5,6 +5,11 @@
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
 }
-/* *::-webkit-scrollbar {
+*::-webkit-scrollbar {
   background-color: #101010;
+  width: 1px;
+}
+/* *::-webkit-scrollbar-thumb {
+  background-color: #c05e09a5;
+  border-radius: 11px;
 } */

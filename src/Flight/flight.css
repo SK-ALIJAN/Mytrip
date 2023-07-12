@@ -69,7 +69,7 @@ bottom: 70px;
 background-color: transparent;
 display: grid;
 grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-gap: 30px;
+gap: 20px;
 height: 60vh;
 overflow: scroll;
 }

@@ -5,6 +5,8 @@ import {
   BsFillCarFrontFill,
 } from "react-icons/bs";
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 let image = [
   "https://img.freepik.com/free-photo/airplane-sunset_1150-8338.jpg?size=626&ext=jpg",
   "https://media.gettyimages.com/id/467789033/photo/city-above-the-clouds-darjeeling.jpg?s=612x612&w=0&k=20&c=bA_uGRMQPpOn49P4gSz8DjQgIIUotIG38D4ZfaaqvCA=",
@@ -15,6 +17,7 @@ let image = [
 ];
 
 const Images = () => {
+let Navigate=useNavigate();
   return (
     <div className="main">
       <div className="firstline">
@@ -44,25 +47,25 @@ const Images = () => {
 
           
         </div>
-        <div>
+        <div onClick={()=>{Navigate('/flight')}}>
           <img src={image[0]} alt="" />
         </div>
-        <div>
+        <div onClick={()=>{Navigate('/hotel')}}>
           <img src={image[1]} alt="" />
         </div>
       </div>
       <div className="secondline">
-        <div>
+        <div onClick={()=>{Navigate('/flight')}}>
           <img src={image[2]} alt="" />
         </div>
-        <div>
+        <div onClick={()=>{Navigate('/hotel')}}>
           <img src={image[3]} alt="" />
         </div>
-        <div>
+        <div onClick={()=>{Navigate('/flight')}}>
           <img src={image[4]} alt="" />
         </div>
 
-        <div>
+        <div onClick={()=>{Navigate('/car')}}>
           <img src={image[5]} alt="" />
         </div>
       </div>

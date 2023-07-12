@@ -1,15 +1,15 @@
 .contact-us-page {
-  max-width: 800px;
+ width: 80%;
   margin: 0 auto;
   padding: 20px;
   color: white;
   background-color: transparent;
- 
+  position: relative;
+  bottom: 60px;
 }
 
-
-.contact-us-page p{
-font-size: small;
+.contact-us-page p {
+  font-size: small;
 }
 
 .page-header {
@@ -18,9 +18,7 @@ font-size: small;
   background-color: transparent;
 }
 
-.page-content {
-  margin-bottom: 40px;
-}
+
 
 .contact-details {
   display: grid;
@@ -38,6 +36,9 @@ font-size: small;
   align-items: center;
   margin-bottom: 10px;
 }
+.contact-item span{
+display: flex;
+}
 
 .contact-item svg {
   margin-right: 10px;
@@ -47,17 +48,25 @@ font-size: small;
   display: grid;
   grid-gap: 10px;
 }
-
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
 .form-group label {
   font-weight: bold;
+  background-color: transparent;
 }
-
+#name {
+  width: 100%;
+  background-color: transparent;
+}
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 button[type="submit"] {
@@ -76,15 +85,14 @@ button[type="submit"]:hover {
 .page-footer {
   text-align: center;
 }
-.message{
-position: fixed;
-top: 13%;
-left: 50%;
-transform: translate(-50%,-50%);
-background-color: #4628ff;
-padding: 20px;
-text-align: center;
-border-radius: 11px;
-font-weight: 600;
-
+.message {
+  position: fixed;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4628ff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: 600;
 }

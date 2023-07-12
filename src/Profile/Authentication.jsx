@@ -9,6 +9,7 @@ import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs";
 import { Contextapi } from "../ContextApi";
 import ErrorMessage from "./ErrorMessage";
 import LoginSuccessMessage from "./LoginMessage";
+import { useEffect } from "react";
 
 let reducer = (state, action) => {
   switch (action.type) {
@@ -24,6 +25,7 @@ let reducer = (state, action) => {
       return state;
   }
 };
+let lsData = null;
 
 const Authentication = () => {
   let Navigate = useNavigate();
@@ -42,6 +44,9 @@ const Authentication = () => {
     setText({ name: "", email: "", password: "" });
     Dispatch({ type: "login" });
   };
+  useEffect(() => {
+    lsData = localStorage.getItem("carrentPage");
+  }, []);
 
   async function api(details) {
     let url = `https://6410847f7b24bb91f21fd94b.mockapi.io/ali`;
@@ -70,7 +75,7 @@ const Authentication = () => {
       login();
       setMessage(true);
       setTimeout(() => {
-        Navigate("/");
+        Navigate(`/${lsData}`);
       }, 1000);
     } else {
       setError(true);
