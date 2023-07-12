@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+## Mytrip
+<br>
+Experience a world of convenience with Myrip, your go-to platform for effortlessly booking flights and hotels, transforming travel planning into an enjoyable journey.  <br><br>
+<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/36828ded-f6d5-40c2-9edf-87c2a317fbb7"></p> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+****************************************************************************************
+Deployed link:-
+# (https://mytrip-app.netlify.app/)
 
-## Available Scripts
+It is individual project made in 10 days 
 
-In the project directory, you can run:
+****************************************************************************************
 
-### `npm start`
+# Tech-Stack Used:-
+1. React
+2. Css
+3. Json Sever
+4. LocalStorage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+******************************************************************************************
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Features 
++ Authentication
++ Signin/Signup Functionality
++ Flight Booking
++ Hotel Booking
++ Search functionality
++ Dynamic page
++ user can see booking type
++ Add to Cart functionality
++ Payment functionality
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+****************************************************************************************
+## Preview <br>
+<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/e0f60f64-cdeb-4b2c-8741-77bff9641ce1"></p> <br>
 
-### `npm run build`
+<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/a31a8028-e1da-4181-882d-3bf86835628c"></p> <br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/68074bfd-dc07-4ee3-bea2-3492ffedaf7a"></p> <br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/00664966-aa37-41fd-862c-e8607b5ae4ee"></p> <br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/092997a6-6edb-4c4f-a57d-56d23e23b414"></p> <br>
 
-### `npm run eject`
+<p align="center"><img src="https://github.com/SK-ALIJAN/Triptribe.com/assets/106768235/73f89af2-a80d-45db-aeba-38a906e38c0e"></p> <br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+****************************************************************************************
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alijan786/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Terms and Conditions for using this project:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Deployment Restrictions: You are strictly prohibited from deploying any webpage from this project on any platform without explicit permission from the respective owners or rights holders.
 
-### Code Splitting
+Personal Learning Use: You may use this project solely for personal learning purposes. It is intended to facilitate your understanding and development skills.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Organizational Training: If you are an organization planning to utilize this project for training purposes, you must obtain permission from the creators (specifically Sk Alijan) before proceeding.
 
-### Analyzing the Bundle Size
+Misuse Disclaimer: The creators of this project, namely Sk Alijan, cannot be held responsible for any misuse or unauthorized use of the webpages by individuals from any country.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Self-Risk Disclaimer: If you choose to misuse or publish the webpages from this project without permission, you do so entirely at your own risk. The creators will not be liable for any consequences.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please note that any unauthorized use, distribution, or deployment of this project is a violation of these terms and may be subject to legal consequences.
