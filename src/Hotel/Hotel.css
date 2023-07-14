@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  background-color: transparent;
 }
 .fewImage {
   background-color: white;

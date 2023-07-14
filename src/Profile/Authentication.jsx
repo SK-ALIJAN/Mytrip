@@ -90,7 +90,7 @@ const Authentication = () => {
       <Navbar />
       <div className="login-signup-wrapper">
         {state.login ? (
-          <div className="form login">
+          <div className="form login" id="Login">
             <header>Login</header>
             <form action="#" onSubmit={handleLogin}>
               <div className="row">
@@ -154,7 +154,7 @@ const Authentication = () => {
             {message ? <LoginSuccessMessage /> : ""}
           </div>
         ) : (
-          <div className="form signup">
+          <div className="form signup" id="signup">
             <header>Signup</header>
             <form action="#" onSubmit={handleregister}>
               <div className="row">

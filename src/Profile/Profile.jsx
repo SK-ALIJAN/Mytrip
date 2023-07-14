@@ -6,6 +6,8 @@ import Footer from "../Homepage/Footer";
 import styles from "./profile.module.css";
 import { BiSad } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
+import Recipt from "./Recipt";
+let reciptData = null;
 
 const Profile = () => {
   let data = localStorage.getItem("loggedINUser");
@@ -14,6 +16,7 @@ const Profile = () => {
   let { states, logout } = useContext(Contextapi);
 
   let [user, setUser] = useState(false);
+  let [recipt, setRecipt] = useState(false);
   let [userData, setuserData] = useState({});
   let usData = states.user.filter((ele) => {
     return ele.id === data;
@@ -23,6 +26,9 @@ const Profile = () => {
     setUser(true);
   }, 500);
 
+  let closeRecipt = () => {
+    setRecipt(false);
+  };
   return (
     <>
       <Navbar />
@@ -69,28 +75,41 @@ const Profile = () => {
                   {bookings.map((ele) => {
                     if (ele.category !== undefined) {
                       return (
-                        <div key={ele}>
+                        <div
+                          key={ele}
+                          onClick={() => {
+                            reciptData = ele;
+                            setRecipt(true);
+                          }}
+                        >
                           <p>Booking type : Hotel </p>
                           <p>Hotel's Name : {ele.hotel_name}</p>
-                             <p>Date : {ele.date}</p>
+                          <p>Date : {ele.date}</p>
                           <p>Payment Mode : {ele.payment}</p>
                           <p>Payment Status : Successfull</p>
                         </div>
                       );
                     } else {
                       return (
-                        <div key={ele}>
+                        <div
+                          key={ele}
+                          onClick={() => {
+                            reciptData = ele;
+                            setRecipt(true);
+                          }}
+                        >
                           <p>Booking type : Flight</p>
                           <p>Flight's Name : {ele.name}</p>
-                            <p>Date : {ele.date}</p>
+                          <p>Date : {ele.date}</p>
                           <p>Payment Mode : {ele.payment}</p>
                           <p>Payment Status : Successfull</p>
                         </div>
                       );
                     }
-                  })}
+                  })}{" "}
                 </div>
-              )}
+              )}{" "}
+              {recipt ? <Recipt {...reciptData} closeRecipt={closeRecipt}/> : ""}
             </div>
 
             <button className={styles["logout-button"]} onClick={logout}>

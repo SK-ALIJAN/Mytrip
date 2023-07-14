@@ -23,7 +23,8 @@ border-radius: 11px;
   align-items: center;
   color: white;
   font-weight: 600;
-  
+  margin-top: 10px;
+  background-color: transparent;
 }
 .downIcon {
   margin: 8px;

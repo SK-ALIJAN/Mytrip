@@ -38,9 +38,9 @@ input {
   outline: 0;
   caret-color: #fdfdfd;
 }
-input::placeholder{
-color: #ffffff;
-font-size: 15px;
+input::placeholder {
+  color: #ffffff;
+  font-size: 15px;
 }
 input[type="text"],
 input[type="password"] {
@@ -52,10 +52,10 @@ input[type="password"] {
   color: #ffffff;
   font-weight: 600;
 }
-input[type="checkbox"]{
-width: 1rem;
-height: 1rem;
-cursor: pointer;
+input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
 }
 .button {
   display: flex;
@@ -75,7 +75,6 @@ cursor: pointer;
   padding-left: 0;
   display: flex;
   align-items: center;
-
 }
 .checkbox label {
   background-color: #c05f09;
@@ -92,32 +91,32 @@ p span {
   font-size: 15px;
   cursor: pointer;
 }
-form+p{
-font-size: 15px;
-color: #ffffff;
-text-align: center;
-letter-spacing: 2px;
+form + p {
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 2px;
 }
-input[type="submit"]{
-border: 0;
-outline: 0;
-width: 100%;
-background: linear-gradient(
+input[type="submit"] {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 0%,
     rgba(0, 142, 255, 1) 100%
   );
-padding: 10px;
-color: #ffffff;
-border-radius: 11px;
-letter-spacing: 2px;
-font-size: 15px;
-cursor: pointer;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 11px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  cursor: pointer;
 }
-.BSICON{
-background-color: #c05f09;
-position: absolute;
-left: 88%;
-color: #ffffff;
+.BSICON {
+  background-color: #c05f09;
+  position: absolute;
+  left: 88%;
+  color: #ffffff;
 }

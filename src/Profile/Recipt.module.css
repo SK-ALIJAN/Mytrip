@@ -1,0 +1,62 @@
+.mainRecipt {
+  background-color: aliceblue;
+  position: fixed;
+  width: 20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  font-size: 15px;
+  color: black;
+  overflow: hidden;
+  border-radius: 11px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.mainRecipt div {
+  background-color: transparent;
+}
+.mainRecipt button {
+  background-color: teal;
+  border: 0;
+  outline: 0;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 90%;
+  top: 1%;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mainRecipt button:hover {
+  background-color: red;
+  border-radius: 3px;
+}
+.mainRecipt img {
+  width: 100%;
+  /* height: 10rem; */
+}
+.mainRecipt img + div {
+  background-color: transparent;
+  padding: 10px;
+}
+.mainRecipt img + div div {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  font-weight: 600;
+  text-transform: capitalize;
+  align-items: center;
+}
+.hotelrecipt,.flightrecipt {
+  background-color: transparent;
+}
+.flightrecipt{
+padding: 10px;
+}
+.flightrecipt img{
+width: 2rem;
+background-color: transparent;
+margin-right: 10px;
+
+}
