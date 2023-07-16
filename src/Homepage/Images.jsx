@@ -17,59 +17,96 @@ let image = [
 ];
 
 const Images = () => {
-let Navigate=useNavigate();
+  let Navigate = useNavigate();
   return (
-    <div className="main">
-      <div className="firstline">
-        <div>
-          <p>My trip</p>
-          <p>
-            Experience the vibrant tapestry of cultures, flavors, and landscapes
-            as Mytrip India weaves together unforgettable journeys tailored just
-            for you.
-          </p>
-        </div>
-
-        <div className="icond">
-          <div className="icons">
-            <div className="hotelIcon">
-              <BsBuildingCheck />
-            </div>
-            <div className="flightIcon">
-              <BsFillAirplaneFill />
-            </div>
-            <div className="carIcon">
-              <BsFillCarFrontFill />
-            </div>
+    <>
+      {" "}
+      <div className="main">
+        <div className="firstline">
+          <div>
+            <p className="modifyit">My trip</p>
+            <p>
+              Experience the vibrant tapestry of cultures,{" "}
+              <span className="hideNows">
+                {" "}
+                flavors, and landscapes as Mytrip India weaves together
+                unforgettable journeys tailored just for you.
+              </span>
+            </p>
           </div>
 
-          <p>Explore the World with Mytrip Making Journeys Brighter!</p>
+          <div className="icond hideNows">
+            <div className="icons">
+              <div className="hotelIcon">
+                <BsBuildingCheck />
+              </div>
+              <div className="flightIcon">
+                <BsFillAirplaneFill />
+              </div>
+              <div className="carIcon">
+                <BsFillCarFrontFill />
+              </div>
+            </div>
 
-          
+            <p>Explore the World with Mytrip Making Journeys Brighter!</p>
+          </div>
+          <div
+            onClick={() => {
+              Navigate("/flight");
+            }}
+          >
+            <img src={image[0]} alt="" />
+          </div>
+          <div
+            onClick={() => {
+              Navigate("/hotel");
+            }}
+          >
+            <img src={image[1]} alt="" />
+          </div>
         </div>
-        <div onClick={()=>{Navigate('/flight')}}>
-          <img src={image[0]} alt="" />
-        </div>
-        <div onClick={()=>{Navigate('/hotel')}}>
-          <img src={image[1]} alt="" />
+        <div className="secondline">
+          <div
+            onClick={() => {
+              Navigate("/flight");
+            }}
+          >
+            <img src={image[2]} alt="" />
+          </div>
+          <div
+            onClick={() => {
+              Navigate("/hotel");
+            }}
+          >
+            <img src={image[3]} alt="" />
+          </div>
+          <div
+            onClick={() => {
+              Navigate("/flight");
+            }}
+          >
+            <img src={image[4]} alt="" />
+          </div>
+
+          <div
+            onClick={() => {
+              Navigate("/car");
+            }}
+            className="hideNows"
+          >
+            <img src={image[5]} alt="" />
+          </div>
         </div>
       </div>
-      <div className="secondline">
-        <div onClick={()=>{Navigate('/flight')}}>
-          <img src={image[2]} alt="" />
-        </div>
-        <div onClick={()=>{Navigate('/hotel')}}>
-          <img src={image[3]} alt="" />
-        </div>
-        <div onClick={()=>{Navigate('/flight')}}>
-          <img src={image[4]} alt="" />
-        </div>
-
-        <div onClick={()=>{Navigate('/car')}}>
-          <img src={image[5]} alt="" />
-        </div>
-      </div>
-    </div>
+      <img
+        src="https://platforms.makemytrip.com/contents/b605b631-f177-4732-a5bc-bee331e120eb"
+        alt=""
+        style={{ width: "90%", margin: "auto", display:"block",borderRadius:"11px"}}
+         onClick={() => {
+              Navigate("/hotel");
+            }}
+      />
+    </>
   );
 };
 

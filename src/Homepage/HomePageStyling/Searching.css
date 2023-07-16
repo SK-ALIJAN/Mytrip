@@ -173,10 +173,10 @@
   font-size: 15px;
   cursor: pointer;
 }
-.search:hover{
-background-color: white;
-color: #c05f09;
-font-weight: 600;
+.search:hover {
+  background-color: white;
+  color: #c05f09;
+  font-weight: 600;
 }
 .flightInput input::placeholder {
   color: #101010;
@@ -219,6 +219,7 @@ input[type="date"]::-webkit-datetime-edit-text {
 @media screen and (max-width: 1300px) {
   .For-Searching {
     width: 70%;
+    margin-bottom: 40px;
   }
 
   .section1 {
@@ -274,5 +275,31 @@ input[type="date"]::-webkit-datetime-edit-text {
     margin-top: 20px;
     width: 22rem;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #thistitle {
+    font-size: 15px;
+  }
+  .flightInput div,
+  .flightInput input,
+  .class select,
+  .flightInput section {
+    width: 100% !important;
+  }
+  .mains > p:nth-child(1),
+  .For-Searching {
+    width: 100%;
+  }
+  #ftick {
+    top: 40px;
+  }
+  .from input,
+  .To input {
+    width: 5rem;
+  }
+  .flightInput{
+  overflow: hidden;
   }
 }

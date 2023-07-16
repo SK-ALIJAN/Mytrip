@@ -79,7 +79,7 @@ const Searching = () => {
     <>
       {show ? (
         <div className="mains">
-          <p>Embark on enchanting journeys, With MyTrip's care, worry-free.</p>
+          <p id="thistitle">Embark on enchanting journeys, With MyTrip's care, worry-free.</p>
 
           <div className="For-Searching">
             {/* ...radio button */}

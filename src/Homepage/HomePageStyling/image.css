@@ -109,3 +109,23 @@
   font-size: x-large;
   background-color: inherit;
 }
+
+@media screen and (max-width: 1100px) {
+  .main img {
+    height: 14rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .main img {
+    height: 10rem;
+  }
+  .firstline > * ,.secondline > *{
+  width: 31%;
+}
+  .hideNows{
+  display: none;
+  }
+  .modifyit{
+  font-size: 14px;
+  }
+}

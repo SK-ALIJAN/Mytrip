@@ -137,9 +137,11 @@ nav {
   cursor: pointer;
 }
 
-@media screen and (max-width: 850px) and (min-width: 515px) {
+@media screen and (max-width: 850px) and (min-width: 500px) {
   .rightbutton {
-    width: 20%;
+    width: 25%;
+    position: relative;
+    left: 10px;
   }
   .support {
     margin-right: 0;
@@ -160,6 +162,7 @@ nav {
   }
   .support:hover .showw {
     display: block;
+    margin-right: 10px;
    
   }
   .MyBookings {
@@ -173,7 +176,7 @@ nav {
   .leftbutton {
     width: 70%;
   }
-  .Menu a {
-    font-size: 20px;
+ .menushere {
+    font-size: .6rem !important;
   }
 }

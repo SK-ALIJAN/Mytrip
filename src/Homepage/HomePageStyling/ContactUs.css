@@ -96,3 +96,10 @@ button[type="submit"]:hover {
   border-radius: 11px;
   font-weight: 600;
 }
+
+@media screen and (max-width:910px){
+  .contact-details{
+  display: flex;
+  flex-direction: column;
+  }
+}

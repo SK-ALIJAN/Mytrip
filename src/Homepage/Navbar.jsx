@@ -51,6 +51,7 @@ const Navbar = () => {
               style={({ isActive }) =>
                 isActive ? activeLink : Default
               }
+              className='menushere'
             >
               {nav.label}
             </NavLink>

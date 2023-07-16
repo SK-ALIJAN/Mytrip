@@ -180,3 +180,31 @@ width: 6rem;
 position: relative;
 right: 40px;
 }
+
+/* *********************************** */
+@media screen and (max-width:963px){
+  .footerFirst > div:nth-child(1) > :nth-child(1){
+  font-size: small;
+  }
+  .footerFirst > div:nth-child(1) > :nth-child(1) + div {
+  font-size: 13px;
+  }
+  #hidethis{
+  display: none;
+  }
+}
+@media screen and (max-width:770px){
+  .footerFirst > div:nth-child(1) > :nth-child(1){
+  font-size: small;
+  }
+  .footerFirst > div:nth-child(1) > :nth-child(1) + div {
+  font-size: 13px;
+  flex-direction: column;
+  }
+  #hidethis{
+  display: none;
+  }
+   .footerFirst > div:nth-child(1) + div > button{
+   font-size: 10px;
+   }
+}

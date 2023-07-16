@@ -14,7 +14,7 @@ const Footer = () => {
           <p>Try to book here</p>
           <div>
             <p>{<BsCheckLg className="tick" />}Safe and Secure</p>
-            <p>{<BsCheckLg className="tick" />}Choose the Best</p>
+            <p id="hidethis">{<BsCheckLg className="tick" />}Choose the Best</p>
             <p>{<BsCheckLg className="tick" />}Our 24/7 Support</p>
           </div>
         </div>

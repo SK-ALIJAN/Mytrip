@@ -38,3 +38,12 @@ background-color: transparent;
 margin-left: 10px;
 font-size: small;
 }
+
+@media screen and (max-width:650px){
+  .not-found-container img{
+  width: 70%;
+  }
+  .not-found-message{
+  font-size: 18px;
+  }
+}
