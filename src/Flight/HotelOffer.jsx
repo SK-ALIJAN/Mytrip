@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styles from "./hotelOffer.module.css";
-import { useNavigate } from "react-router-dom";
 import HotelDetails from "../Hotel/HotelDetails";
 const HotelOffer = (props) => {
-  let Navigate = useNavigate();
+
   let [hotelView, setHotelview] = useState(false);
   let onClose = () => {
     setHotelview(false);
@@ -26,7 +25,7 @@ const HotelOffer = (props) => {
         <div className={styles.for_details}>
           <div>
             <p>{props.hotel_name}</p>
-            <p>Get Up To {props.id}% OFF*</p>
+            <p id={styles.decrese}>Get Up To {props.id}% OFF*</p>
             <p>{props.place}</p>
           </div>
           <p className={styles.view_details}>VIEW DETAILS</p>

@@ -109,7 +109,7 @@
 .from input,
 .To input {
   padding: 12px;
-  border: 2px solid white;
+  border: 2px solid white !important;
   outline: 0;
   border-radius: 5px;
   width: 15rem;
@@ -221,6 +221,9 @@ input[type="date"]::-webkit-datetime-edit-text {
     width: 70%;
     margin-bottom: 40px;
   }
+  .mains {
+    margin-bottom: 20px;
+  }
 
   .section1 {
     flex-direction: column;
@@ -292,6 +295,10 @@ input[type="date"]::-webkit-datetime-edit-text {
   .For-Searching {
     width: 100%;
   }
+  .For-Searching{
+  position: relative;
+  right: 5px;
+  }
   #ftick {
     top: 40px;
   }
@@ -299,7 +306,7 @@ input[type="date"]::-webkit-datetime-edit-text {
   .To input {
     width: 5rem;
   }
-  .flightInput{
-  overflow: hidden;
+  .flightInput {
+    overflow: hidden;
   }
 }

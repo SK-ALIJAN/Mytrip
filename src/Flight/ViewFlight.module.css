@@ -78,3 +78,35 @@ font-size: 13px;
 .AvailableFlight{
 background-color: white;
 }
+
+@media screen and (max-width:810px) {
+  .under_main_section{
+  flex-direction: column;
+ margin: auto;
+  width: 60%;
+  }
+  .under_main_section>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: .5rem;
+  }
+  .flight_Available>p:nth-child(1){
+  font-size: 1rem;
+  }
+}
+@media screen and (max-width:500px) {
+  .under_main_section{
+   width: 90%;
+  }
+  .under_main_section>div{
+ 
+  }
+  .SortedBy{
+  font-size: 8px !important;
+  }
+  .flight_Available>p:nth-child(1){
+ font-size: 15px ;
+  }
+}

@@ -1,7 +1,7 @@
 #mainT {
   background-color: white;
   display: flex;
-  width: 95%;
+  width: 90%;
   margin: auto;
   padding: 30px;
 }
@@ -67,4 +67,28 @@ select {
   font-weight: 600;
   margin-bottom: 5px;
   letter-spacing: 2px;
+}
+@media screen and (max-width:500px){
+  #mainT{
+  flex-direction: column-reverse;
+  width: 80vw;
+  }
+  .cusPay{
+  width: 90%;
+  }
+  .CustomerInfo>div{
+  flex-direction: column;
+  }
+  .CustomerInfo input{
+  width: 100%;
+  }
+   .CustomerInfo input[type="email"]{
+   width: 103%;
+   }
+   .CustomerInfo select{
+   width: 105%;
+   }
+   .CustomerInfo input[type="number"]{
+   width: 103%;
+   }
 }

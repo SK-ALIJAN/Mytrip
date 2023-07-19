@@ -98,3 +98,19 @@ bottom: 20px;
 width: 100%;
 border-radius: 11px;
 }
+@media screen and (max-width:1300px){
+  .firstOne{
+  margin-top: 80px;
+  }
+}
+@media screen and (max-width:800px){
+  .whereToGo{
+  font-size: .4rem;
+  }
+  #hideit{
+  display: none;
+  }
+  .hotelShow>p:nth-child(1){
+  font-size: 12px;
+  }
+}

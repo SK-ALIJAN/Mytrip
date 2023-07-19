@@ -172,11 +172,56 @@ nav {
     display: none;
   }
 }
-@media screen and (max-width: 715px) and (min-width: 500px) {
+@media screen and (max-width: 715px) and (min-width: 350px) {
   .leftbutton {
     width: 70%;
   }
  .menushere {
-    font-size: .6rem !important;
+    font-size: .4rem !important;
+  }
+    .rightbutton {
+    width: 25%;
+    position: relative;
+    left: 10px;
+    display: flex;
+  }
+  .support {
+    margin-right: 0;
+  }
+  .support > p:nth-child(1) {
+    position: absolute;
+    left: 1px;
+  }
+  .support > p:nth-child(2) {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background-color: #4628ff;
+    padding: 5px;
+    border-radius: 8px;
+    z-index: 2;
+    font-size: 13px;
+  }
+  .support:hover .showw {
+    display: block;
+    margin-right: 25px;
+    font-size: 8px !important;
+  }
+  .supportDisplay{
+  
+  left: -90px;
+  }
+  .supportDisplay p{
+  font-size: 10px;
+  }
+  .MyBookings {
+    border: none;
+    width: max-content;
+  }
+  .globeIcon{
+  font-size: 16px;
+  }
+  .MyBookings > p:nth-child(2) {
+    display: none;
   }
 }

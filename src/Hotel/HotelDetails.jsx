@@ -44,7 +44,7 @@ const HotelDetails = ({
         >
           Close
         </button>
-        <div>
+        <div id={styles.dts}>
           <h1 style={{ fontWeight: "600" }}>{hotel_name}</h1>
           <img src={images} alt={hotel_name} className={styles.TitleImg} />{" "}
           <h2>Additional Images</h2>

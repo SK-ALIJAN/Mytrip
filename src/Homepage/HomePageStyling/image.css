@@ -117,15 +117,29 @@
 }
 @media screen and (max-width: 850px) {
   .main img {
-    height: 10rem;
+    height: 9rem;
   }
   .firstline > * ,.secondline > *{
-  width: 31%;
+  width: 31.5%;
 }
   .hideNows{
   display: none;
   }
   .modifyit{
-  font-size: 14px;
+  font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main img {
+    height: 7rem;
+  }
+  .firstline > * ,.secondline > *{
+  width: 31.5%;
+}
+  .hideNows{
+  display: none;
+  }
+  .modifyit{
+  font-size: 14px !important;
   }
 }

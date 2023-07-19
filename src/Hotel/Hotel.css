@@ -52,3 +52,11 @@ cursor: pointer;
   margin-top: 20px;
   border-radius: 11px;
 }
+@media screen and (max-width:800px){
+  .fewImage{
+  width: 90%;
+  }
+  .FourSide{
+  flex-direction: column;
+  }
+}

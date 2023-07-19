@@ -42,7 +42,7 @@ const CustomerInfo = () => {
   return (
     <div className={Style.CustomerInfo}>
       <p>Customer Info</p>
-      <div>
+      <div className={Style.cus}>
         <div>
           <label htmlFor="FirstName">First Name</label>
           <input type="text" placeholder="First Name, Ex: Sk" />

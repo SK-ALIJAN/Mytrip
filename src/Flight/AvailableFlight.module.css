@@ -96,3 +96,43 @@ align-items: center;
   border-radius: 50%;
   margin-right: 10px;
 }
+.animat{
+animation: ani 1s ease-in-out infinite;
+}
+@keyframes ani {
+  0%{
+  color: red;
+  font-weight: 600;
+  }
+  50%{
+   color: rgb(0, 47, 255);
+  }
+  100%{
+    color: green;
+  font-weight: 900;
+  }
+}
+@media screen and (max-width:800px) {
+  .firstline,.main_box{
+  font-size: .5rem;
+  align-items: center;
+  }
+  .main_box button{
+  font-size: 0.5rem;
+  }
+  .other{
+  font-size: 0.4rem;
+  }
+  .other::before{
+  width: 0.9rem;
+  }
+}
+@media screen and (max-width:500px) {
+  .firstline,.main_box{
+  font-size: .4rem;
+  }
+  .dept>p:nth-child(1),.stop>p,.arive>p:nth-child(1){
+  font-size: 0.5rem !important;
+  }
+
+}

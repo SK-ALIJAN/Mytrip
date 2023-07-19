@@ -68,3 +68,33 @@ input[type="date"]::-webkit-datetime-edit-text {
 .search_button:hover {
   background-color: #4628ff;
 }
+@media screen and (max-width: 800px) {
+  .slogan {
+    font-size: 0.7rem;
+  }
+  .section_main {
+    flex-direction: column;
+    background-color: transparent;
+  }
+    .section_main input{
+    width: 100% !important;
+    }
+    #chDate,#CheckDate,#per{
+    width: 104%;
+    background-color: transparent;
+    margin-top: 20px;
+    }
+     #chDate label,#CheckDate label,#per label{
+     color: white;
+     margin-bottom: 4px;
+     }
+     #chDate input,#CheckDate input,#per input{
+     height: 2.8rem;
+     border-radius: 5px;
+     }
+     .search_button {
+     margin-top: 20px;
+     width: 104%;
+     }
+
+}

@@ -216,3 +216,8 @@
 .logout-button:hover {
   background-color: #ff7875;
 }
+@media screen and (max-width: 500px) {
+  .bookingsShow p{
+ font-size: 5px ;
+  }
+}

@@ -83,3 +83,10 @@
   font-size: xx-large;
   transition: all 1s ease-in-out;
 }
+
+@media screen and (max-width:500px){
+ .completeCheckout{
+ font-size: 0.6rem;
+ width: 100%;
+ }
+}

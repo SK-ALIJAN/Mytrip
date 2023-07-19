@@ -41,7 +41,7 @@ const Flight = () => {
               <p>TripMoney</p>
             </div>
 
-            <div>
+            <div id="hideit">
               <img
                 src="https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_flights.png"
                 alt=""

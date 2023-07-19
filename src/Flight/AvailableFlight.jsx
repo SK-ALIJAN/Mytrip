@@ -14,7 +14,7 @@ const AvailableFlight = (props) => {
         <div className={Styles.details}>
           <img src={props.image} alt={props.name} />
           <div>
-            <p>{props.name}</p>
+            <p className={Styles.animat}>{props.name}</p>
             <p>{props.flight_code}</p>
           </div>
         </div>

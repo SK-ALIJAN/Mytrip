@@ -88,6 +88,22 @@
 #pleaseNote ul li {
   background-color: inherit;
 }
-#pleaseNote ul li{
-margin-bottom: 10px;
+#pleaseNote ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  #pleaseNote {
+    display: none;
+  }
+  .upiTitle {
+font-size: 15px;
+  }
+  .upiOption{
+  width: 90%;
+  font-size: 13px;
+  }
+   .upiOption input{
+   width: 75%;
+   }
 }

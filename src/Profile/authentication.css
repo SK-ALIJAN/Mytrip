@@ -120,3 +120,13 @@ input[type="submit"] {
   left: 88%;
   color: #ffffff;
 }
+
+
+@media screen and (max-width:500px){
+  .login-signup-wrapper{
+  width: 92vw;
+  position: relative;
+  top: 60px;
+  }
+
+}

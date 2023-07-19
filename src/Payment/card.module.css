@@ -56,3 +56,25 @@ content: " *";
   justify-content: space-evenly;
   margin-bottom: 10px;
 }
+@media screen and (max-width:500px){
+  .cardPayment{
+  width: 110% !important;
+  position: relative;
+  right: 10px;
+  }
+  .paymentTitle{
+  font-size: 20px;
+  }
+  .firstRow{
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  }
+   .firstRow label{
+   margin-bottom: 4px;
+   font-size: 15px;
+   }
+   .firstRow input{
+   margin-bottom: 10px;
+   }
+}

@@ -158,3 +158,34 @@
 .RightIcon {
   left: 17rem;
 }
+
+@media screen and (max-width: 800px) {
+  #main_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #main_container > .imageDiv,
+  .detailsDiv {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .imageDiv {
+    flex-direction: column;
+  }
+  .titleImage {
+    width: 95%;
+  }
+  .insideImage {
+    display: none;
+  }
+  .LeftIcon {
+    left: 2.5rem;
+    font-size: 10px;
+  }
+  .RightIcon {
+    left: 16rem;
+  }
+}

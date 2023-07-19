@@ -66,7 +66,7 @@ const Searching = () => {
           }}
         />
 
-        <div>
+        <div id={Style.chDate}>
           <label>Check-In:</label>
           <input
             type="date"
@@ -76,7 +76,7 @@ const Searching = () => {
             }}
           />
         </div>
-        <div>
+        <div id={Style.CheckDate}>
           <label>Check-Out:</label>
           <input
             type="date"
@@ -86,7 +86,7 @@ const Searching = () => {
             }}
           />
         </div>
-        <div>
+        <div id={Style.per}>
           <label>Number of Guests:</label>
           <input
             type="number"

@@ -66,8 +66,8 @@
   font-size: 13px;
   margin-right: 10px;
 }
-.footerFirst > div:nth-child(1) + div > button:nth-child(1):hover{
-background-color: #f05c09;
+.footerFirst > div:nth-child(1) + div > button:nth-child(1):hover {
+  background-color: #f05c09;
 }
 
 .footerFirst > div:nth-child(1) + div > button:nth-child(2) {
@@ -81,9 +81,9 @@ background-color: #f05c09;
   border-radius: 11px;
   font-size: 13px;
 }
-.footerFirst > div:nth-child(1) + div > button:nth-child(2):hover{
-background-color: #f05c09;
-border-color: #f05c09;
+.footerFirst > div:nth-child(1) + div > button:nth-child(2):hover {
+  background-color: #f05c09;
+  border-color: #f05c09;
 }
 .Footer-data {
   width: 90%;
@@ -97,114 +97,167 @@ border-color: #f05c09;
   /* gap: 30px; */
   background-color: #262424;
 }
-.contacts>*{
-background-color: inherit;
+.contacts > * {
+  background-color: inherit;
 }
-h3,p{
-background-color: inherit;
+h3,
+p {
+  background-color: inherit;
 }
-.link{
-background-color: inherit;
-display: flex;
+.link {
+  background-color: inherit;
+  display: flex;
 }
-.link div{
-margin-right: 20px;
-background-color: inherit;
+.link div {
+  margin-right: 20px;
+  background-color: inherit;
 }
-.contacts p:hover,.contacts li:hover{
-color: #f05c09;
+.contacts p:hover,
+.contacts li:hover {
+  color: #f05c09;
 }
-.contacts li{
-list-style: none;
+.contacts li {
+  list-style: none;
 }
 .Footer-data img {
   width: 3rem;
   background-color: inherit;
 }
-.newsletter-subscription form,.newsletter-subscription form>input{
-background-color: #262424;
+.newsletter-subscription form,
+.newsletter-subscription form > input {
+  background-color: #262424;
 }
-.newsletter-subscription form{
-display: flex;
+.newsletter-subscription form {
+  display: flex;
 }
-.newsletter-subscription form>input{
-padding: 10px;
-border-radius: 11px;
-margin-right: 10px;
+.newsletter-subscription form > input {
+  padding: 10px;
+  border-radius: 11px;
+  margin-right: 10px;
 }
-.newsletter-subscription form>input::placeholder{
-font-size: 13px;
+.newsletter-subscription form > input::placeholder {
+  font-size: 13px;
 }
-.newsletter-subscription form>button{
-border: 0;
-background-color: #f05c09;
-font-size: 13px;
-font-weight: 600;
-border-radius: 8px;
-outline: 0;
-letter-spacing: 2px;
+.newsletter-subscription form > button {
+  border: 0;
+  background-color: #f05c09;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  outline: 0;
+  letter-spacing: 2px;
 }
-.newsletter-subscription form>button:hover{
-background-color: #4828ff;
-color: white;
-cursor: pointer;
+.newsletter-subscription form > button:hover {
+  background-color: #4828ff;
+  color: white;
+  cursor: pointer;
 }
 
-.disclaimer{
-background-color: #262424;
-border-bottom: 2px solid #f05c09;
+.disclaimer {
+  background-color: #262424;
+  border-bottom: 2px solid #f05c09;
 }
-.copyright{
-background-color: #262424;
-display: flex;
-justify-content: space-between;
-align-items: center;
+.copyright {
+  background-color: #262424;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.copyright button{
-color:white;
-font-size: 10px;
-background: linear-gradient(
+.copyright button {
+  color: white;
+  font-size: 10px;
+  background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 0%,
     rgba(0, 142, 255, 1) 100%
   );
-border: none;
-border-radius: 11px;
-padding: 5px;
-cursor: pointer;
+  border: none;
+  border-radius: 11px;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.Footer-data img{
-width: 6rem;
-position: relative;
-right: 40px;
+.Footer-data img {
+  width: 6rem;
+  position: relative;
+  right: 40px;
 }
 
 /* *********************************** */
-@media screen and (max-width:963px){
-  .footerFirst > div:nth-child(1) > :nth-child(1){
-  font-size: small;
+@media screen and (max-width: 963px) {
+  .footerFirst > div:nth-child(1) > :nth-child(1) {
+    font-size: small;
   }
   .footerFirst > div:nth-child(1) > :nth-child(1) + div {
-  font-size: 13px;
+    font-size: 13px;
   }
-  #hidethis{
-  display: none;
+  #hidethis {
+    display: none;
   }
 }
-@media screen and (max-width:770px){
-  .footerFirst > div:nth-child(1) > :nth-child(1){
-  font-size: small;
+@media screen and (max-width: 770px) {
+  .footerFirst > div:nth-child(1) > :nth-child(1) {
+    font-size: small;
   }
   .footerFirst > div:nth-child(1) > :nth-child(1) + div {
-  font-size: 13px;
-  flex-direction: column;
+    font-size: 13px;
+    /* flex-direction: column; */
   }
-  #hidethis{
-  display: none;
+  #hidethis {
+    display: none;
   }
-   .footerFirst > div:nth-child(1) + div > button{
-   font-size: 10px;
-   }
+  .footerFirst > div:nth-child(1) + div > button {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footerFirst {
+    flex-direction: column;
+  }
+  .footerFirst > div:nth-child(1) > :nth-child(1) {
+    font-size: small;
+    text-align: center;
+  }
+  .footerFirst > div:nth-child(1) > :nth-child(1) + div {
+    font-size: 10px;
+    /* flex-direction: column; */
+    text-align: center;
+  }
+  #hidethis {
+    display: none;
+  }
+  .footerFirst > div:nth-child(1) + div > button {
+    font-size: 10px;
+  }
+.Footer-data{
+width: 100%;
+
+}
+  .Footer-data p,
+  .Footer-data button,
+  .Footer-data input {
+    font-size: 8px !important;
+  }
+  .Footer-data h3 {
+    font-size: 15px;
+  }
+  .Footer-data h3, .Footer-data p{
+  width: max-content;
+  position: relative;
+  left: .5rem;
+  }
+  .copyright {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #footer {
+    padding-bottom: 20px;
+  }
+  .contact-information{
+  /* border: 2px solid red; */
+  }
+  .disclaimer p{
+  width: 80%;
+  }
 }

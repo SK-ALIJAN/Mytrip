@@ -18,3 +18,9 @@ background-color: transparent;
 display: flex;
 justify-content: space-between;
 }
+@media screen and (max-width:500px) {
+ .mainDiv{
+ width: 100%;
+ margin: 0;
+ } 
+}
