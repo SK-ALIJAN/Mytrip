@@ -105,7 +105,7 @@
 
 @media screen and (max-width: 500px) {
   .close-button {
-    top: 7.5%;
+    top: 10%;
   }
   #dts {
     position: relative;

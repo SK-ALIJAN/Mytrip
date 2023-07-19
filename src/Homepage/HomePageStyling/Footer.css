@@ -230,22 +230,25 @@ p {
   .footerFirst > div:nth-child(1) + div > button {
     font-size: 10px;
   }
-.Footer-data{
-width: 100%;
-
-}
+  .Footer-data {
+    width: 100%;
+  }
   .Footer-data p,
   .Footer-data button,
   .Footer-data input {
     font-size: 8px !important;
   }
+  .Footer-data div {
+    width: 90%;
+  }
   .Footer-data h3 {
     font-size: 15px;
   }
-  .Footer-data h3, .Footer-data p{
-  width: max-content;
-  position: relative;
-  left: .5rem;
+  .Footer-data h3,
+  .Footer-data p {
+    width: max-content;
+    position: relative;
+    left: 0.3rem;
   }
   .copyright {
     margin-top: 20px;
@@ -254,10 +257,10 @@ width: 100%;
   #footer {
     padding-bottom: 20px;
   }
-  .contact-information{
-  /* border: 2px solid red; */
+  .contact-information {
+    /* border: 2px solid red; */
   }
-  .disclaimer p{
-  width: 80%;
+  .disclaimer p {
+    width: 80%;
   }
 }
