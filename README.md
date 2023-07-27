@@ -7,7 +7,7 @@ Elevate your travel adventures with Myrip, where flight and hotel reservations a
 
 ****************************************************************************************
 Deployed link:-
-# (https://mytrip-app.netlify.app/)
+# (https://my-trip-wine.vercel.app)
 
 It is individual project made in 10 days 
 
