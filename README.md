@@ -1,4 +1,4 @@
-## Mytrip
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=25&duration=3000&pause=1000&random=false&width=435&lines=Hi+!+i+am+Sk+Alijan;This+is+a+flight+booking+project++%2C;colled+my+trip+%2C+built+on+React+js)](https://git.io/typing-svg)
 <br>
 Elevate your travel adventures with Myrip, where flight and hotel reservations are made simple, allowing you to focus on creating unforgettable memories.Experience the convenience of Myrip's user-friendly interface and unlock a world of endless possibilities for your dream vacation.  <br><br>
 <p align="center"><img src="https://github.com/SK-ALIJAN/Mytrip/assets/106768235/b328bdaf-2853-48ee-b95a-e2b58325e726"></p> 
